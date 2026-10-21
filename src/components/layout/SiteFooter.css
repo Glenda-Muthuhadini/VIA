@@ -1,0 +1,35 @@
+.via-site-footer {
+  --footer-gutter: max(clamp(24px, 5.6vw, 104px), calc((100vw - 1600px) / 2));
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  align-items: start;
+  gap: 40px 32px;
+  width: 100%;
+  padding: 40px var(--footer-gutter) 28px;
+  border-top: 1px solid rgba(255, 255, 255, .13);
+  background: #05261f;
+  color: rgba(241, 248, 244, .68);
+  font-family: var(--font-family);
+  font-weight: 400;
+  text-align: left;
+}
+.via-site-footer-brand { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; min-width: 0; }
+.via-site-footer-logo { display: inline-flex; flex-shrink: 0; align-items: center; }
+.via-site-footer img { display: block; width: 96px; height: 64px; object-fit: contain; }
+.via-site-footer p { margin: 0; color: inherit; font-size: 13px; font-weight: 400; line-height: 1.6; }
+.via-site-footer nav.via-site-footer-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 24px; font-size: 12px; line-height: 1.6; }
+.via-site-footer-columns > div { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.via-site-footer .via-site-footer-columns h3 { margin: 0 0 16px; color: #d6e8ae; font-size: 12px; font-weight: 500; letter-spacing: .1em; line-height: 1.06; }
+.via-site-footer a { color: inherit; text-decoration: none; transition: color 160ms ease; }
+.via-site-footer .via-site-footer-columns a { display: flex; align-items: center; min-height: 44px; font-size: 14px; overflow-wrap: anywhere; }
+.via-site-footer a:hover { color: #d6e8ae; }
+.via-site-footer a:focus-visible { outline: 2px solid #d6e8ae; outline-offset: 5px; }
+.via-site-footer-bottom { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, .13); }
+.via-site-footer-bottom :is(p, span) { color: rgba(241, 248, 244, .45); font-size: 11px; line-height: 1.6; }
+@media (max-width: 850px) { .via-site-footer { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 760px) {
+  .via-site-footer { gap: 30px; padding-top: 32px; }
+  .via-site-footer-bottom { flex-direction: column; gap: 10px; padding-top: 22px; }
+}
+@media (max-width: 600px) { .via-site-footer nav.via-site-footer-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px; } }
+@media (prefers-reduced-motion: reduce) { .via-site-footer a { transition: none; } }

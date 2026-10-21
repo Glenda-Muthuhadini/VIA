@@ -1,0 +1,362 @@
+{
+  "verified_at": "2026-10-18T00:00:00Z",
+  "programmes": [
+    {
+      "n": 11,
+      "inst": 5,
+      "title": "Diploma in Public Relations and Communication Extended",
+      "slug": "uj-public-relations-extended",
+      "field": "Humanities",
+      "qualification": "Diploma",
+      "duration": "4 years",
+      "aps": 24,
+      "gate": "diploma",
+      "rules": [
+        {
+          "label": "English",
+          "subject_ids": [
+            "subject-3",
+            "subject-4"
+          ],
+          "minimum_percentage": 50
+        }
+      ],
+      "url": "https://www.uj.ac.za/university-courses/diploma-in-public-relations-and-communication-extended/",
+      "id": "20000000-0000-4000-8000-000000000011",
+      "institution_id": "10000000-0000-4000-8000-000000000005"
+    },
+    {
+      "n": 12,
+      "inst": 5,
+      "title": "Diploma in Accountancy",
+      "slug": "uj-diploma-accountancy",
+      "field": "Business",
+      "qualification": "Diploma",
+      "duration": "3 years",
+      "aps": 22,
+      "gate": "diploma",
+      "rules": [
+        {
+          "label": "English",
+          "subject_ids": [
+            "subject-3",
+            "subject-4"
+          ],
+          "minimum_percentage": 50
+        },
+        {
+          "label": "Mathematics or Mathematical Literacy",
+          "alternatives": [
+            {
+              "subject_id": "subject-1",
+              "minimum_percentage": 40
+            },
+            {
+              "subject_id": "subject-2",
+              "minimum_percentage": 60
+            }
+          ]
+        }
+      ],
+      "aps_alternatives": [
+        {
+          "subject_id": "subject-2",
+          "minimum_aps": 24
+        }
+      ],
+      "url": "https://www.uj.ac.za/university-courses/diploma-in-accountancy/",
+      "id": "20000000-0000-4000-8000-000000000012",
+      "institution_id": "10000000-0000-4000-8000-000000000005"
+    },
+    {
+      "n": 13,
+      "inst": 5,
+      "title": "Bachelor of Accounting (CA-stream)",
+      "slug": "uj-bachelor-accounting-ca",
+      "field": "Business",
+      "qualification": "Bachelor",
+      "duration": "3 years",
+      "aps": 33,
+      "gate": "bachelor",
+      "rules": [
+        {
+          "label": "English",
+          "subject_ids": [
+            "subject-3",
+            "subject-4"
+          ],
+          "minimum_percentage": 50
+        },
+        {
+          "label": "Mathematics",
+          "subject_ids": [
+            "subject-1"
+          ],
+          "minimum_percentage": 60
+        }
+      ],
+      "url": "https://www.uj.ac.za/university-courses/bachelor-of-accounting-ca-stream/",
+      "id": "20000000-0000-4000-8000-000000000013",
+      "institution_id": "10000000-0000-4000-8000-000000000005"
+    },
+    {
+      "n": 14,
+      "inst": 5,
+      "title": "BEd in Foundation Phase Teaching (Grade R–3)",
+      "slug": "uj-bed-foundation-phase",
+      "field": "Education",
+      "qualification": "Bachelor",
+      "duration": "4 years",
+      "aps": 28,
+      "gate": "bachelor",
+      "rules": [
+        {
+          "label": "English Home Language or First Additional Language",
+          "alternatives": [
+            {
+              "subject_id": "subject-3",
+              "minimum_percentage": 60
+            },
+            {
+              "subject_id": "subject-4",
+              "minimum_percentage": 70
+            }
+          ]
+        },
+        {
+          "label": "Mathematics or Mathematical Literacy",
+          "alternatives": [
+            {
+              "subject_id": "subject-1",
+              "minimum_percentage": 40
+            },
+            {
+              "subject_id": "subject-2",
+              "minimum_percentage": 60
+            }
+          ]
+        }
+      ],
+      "url": "https://www.uj.ac.za/university-courses/bed-in-foundation-phase-teaching-grade-r-3/",
+      "id": "20000000-0000-4000-8000-000000000014",
+      "institution_id": "10000000-0000-4000-8000-000000000005"
+    },
+    {
+      "n": 15,
+      "inst": 8,
+      "title": "Higher Certificate in Economic and Management Sciences",
+      "slug": "unisa-higher-certificate-economic-management",
+      "field": "Business",
+      "qualification": "Higher Certificate",
+      "duration": null,
+      "aps": 15,
+      "gate": "certificate",
+      "rules": [
+        {
+          "label": "English",
+          "subject_ids": [
+            "subject-3",
+            "subject-4"
+          ],
+          "minimum_percentage": 30
+        }
+      ],
+      "score": "nsc_six_v1",
+      "score_url": "https://unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/General-admission-requirements",
+      "url": "https://w2.unisa.ac.za/CW/SITES/CORPORAT/DEFAULT/APPLY_FO/UNDERGRA/QUALIFIC/ALL_QUAL/HIGHER-5.HTM",
+      "id": "20000000-0000-4000-8000-000000000015",
+      "institution_id": "10000000-0000-4000-8000-000000000008"
+    },
+    {
+      "n": 16,
+      "inst": 6,
+      "title": "Diploma in ICT in Applications Development",
+      "slug": "cput-diploma-ict-applications-development",
+      "field": "Technology",
+      "qualification": "Diploma",
+      "duration": null,
+      "aps": null,
+      "gate": "unknown",
+      "rules": [],
+      "url": "https://prospectus.cput.ac.za/index.php/course-details?f=220&q=DPICTA",
+      "detail": "Consult the CPUT undergraduate prospectus for the specific school-subject and selection requirements. A complete 2027 scoring rule is not verified in VIA.",
+      "id": "20000000-0000-4000-8000-000000000016",
+      "institution_id": "10000000-0000-4000-8000-000000000006"
+    },
+    {
+      "n": 17,
+      "inst": 7,
+      "title": "Diploma in Information and Communication Technology in Application Development",
+      "slug": "dut-diploma-ict-application-development",
+      "field": "Technology",
+      "qualification": "Diploma",
+      "duration": null,
+      "aps": null,
+      "gate": "unknown",
+      "rules": [],
+      "url": "https://www.dut.ac.za/wp-content/uploads/career_leaflets/FAI%20ICT%20DBN.pdf",
+      "detail": "The official career leaflet lists this qualification. Confirm the current intake requirements and any assessments with DUT; VIA does not apply an unverified score.",
+      "id": "20000000-0000-4000-8000-000000000017",
+      "institution_id": "10000000-0000-4000-8000-000000000007"
+    },
+    {
+      "n": 18,
+      "inst": 9,
+      "title": "Diploma in Information Technology (Software Development)",
+      "slug": "mandela-diploma-it-software-development",
+      "field": "Technology",
+      "qualification": "Diploma",
+      "duration": null,
+      "aps": null,
+      "gate": "unknown",
+      "rules": [],
+      "url": "https://www.mandela.ac.za/getmedia/8d278dd0-b607-4ac3-a7d1-8450ba54a8e2/Prospectus-Faculty-of-EBET?disposition=attachment",
+      "detail": "Nelson Mandela University uses an Applicant Score, not the UJ APS. Confirm the current qualification-specific score and school-subject requirements in the official prospectus.",
+      "id": "20000000-0000-4000-8000-000000000018",
+      "institution_id": "10000000-0000-4000-8000-000000000009"
+    },
+    {
+      "n": 19,
+      "inst": 10,
+      "title": "Diploma in Information Technology",
+      "slug": "tut-diploma-information-technology",
+      "field": "Technology",
+      "qualification": "Diploma",
+      "duration": null,
+      "aps": null,
+      "gate": "unknown",
+      "rules": [],
+      "url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/2027-First-Year-Course-Information.pdf",
+      "detail": "See the 2027 first-year course information for the relevant ICT campus, subject requirements and selection conditions. VIA has not verified a complete scoring rule.",
+      "id": "20000000-0000-4000-8000-000000000019",
+      "institution_id": "10000000-0000-4000-8000-000000000010"
+    },
+    {
+      "n": 20,
+      "inst": 8,
+      "title": "Higher Certificate in Marketing",
+      "slug": "unisa-higher-certificate-marketing",
+      "field": "Business",
+      "qualification": "Higher Certificate",
+      "duration": null,
+      "aps": 15,
+      "gate": "certificate",
+      "rules": [
+        {
+          "label": "English",
+          "subject_ids": [
+            "subject-3",
+            "subject-4"
+          ],
+          "minimum_percentage": 30
+        }
+      ],
+      "score": "nsc_six_v1",
+      "score_url": "https://unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/General-admission-requirements",
+      "url": "https://m.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Higher-Certificate-in-Marketing-%2898229%29",
+      "id": "20000000-0000-4000-8000-000000000020",
+      "institution_id": "10000000-0000-4000-8000-000000000008"
+    },
+    {
+      "n": 21,
+      "inst": 8,
+      "title": "Higher Certificate in Banking",
+      "slug": "unisa-higher-certificate-banking",
+      "field": "Business",
+      "qualification": "Higher Certificate",
+      "duration": null,
+      "aps": 15,
+      "gate": "certificate",
+      "rules": [
+        {
+          "label": "English",
+          "subject_ids": [
+            "subject-3",
+            "subject-4"
+          ],
+          "minimum_percentage": 30
+        }
+      ],
+      "score": "nsc_six_v1",
+      "score_url": "https://unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/General-admission-requirements",
+      "url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Higher-Certificate-in-Banking-%2898225%29",
+      "id": "20000000-0000-4000-8000-000000000021",
+      "institution_id": "10000000-0000-4000-8000-000000000008"
+    }
+  ],
+  "accommodation": [
+    {
+      "n": 11,
+      "inst": 2,
+      "title": "UCT student residences",
+      "url": "https://uct.ac.za/dsa/student-housing",
+      "location": "Cape Town",
+      "province": "Western Cape",
+      "id": "40000000-0000-4000-8000-000000000011",
+      "institution_id": "10000000-0000-4000-8000-000000000002"
+    },
+    {
+      "n": 12,
+      "inst": 3,
+      "title": "UP student residences (TuksRes)",
+      "url": "https://www.up.ac.za/student-accommodation",
+      "location": "Pretoria",
+      "province": "Gauteng",
+      "id": "40000000-0000-4000-8000-000000000012",
+      "institution_id": "10000000-0000-4000-8000-000000000003"
+    },
+    {
+      "n": 13,
+      "inst": 6,
+      "title": "CPUT student residences",
+      "url": "https://www.cput.ac.za/student/support-services/dsa/residence/residence-life",
+      "location": "Cape Town",
+      "province": "Western Cape",
+      "apply": "https://www.cput.ac.za/study-at-cput/undergraduate/apply-for-residence",
+      "id": "40000000-0000-4000-8000-000000000013",
+      "institution_id": "10000000-0000-4000-8000-000000000006"
+    },
+    {
+      "n": 14,
+      "inst": 7,
+      "title": "DUT student residences",
+      "url": "https://www.dut.ac.za/student_services/student-housing-and-residence-life/",
+      "location": "Durban",
+      "province": "KwaZulu-Natal",
+      "id": "40000000-0000-4000-8000-000000000014",
+      "institution_id": "10000000-0000-4000-8000-000000000007"
+    },
+    {
+      "n": 15,
+      "inst": 9,
+      "title": "Nelson Mandela University residence applications",
+      "url": "https://apps.mandela.ac.za/Accommodation/",
+      "location": "Gqeberha",
+      "province": "Eastern Cape",
+      "apply": "https://apps.mandela.ac.za/Accommodation/",
+      "id": "40000000-0000-4000-8000-000000000015",
+      "institution_id": "10000000-0000-4000-8000-000000000009"
+    },
+    {
+      "n": 16,
+      "inst": 10,
+      "title": "TUT student residence information",
+      "url": "https://tut.ac.za/images/docs/study/General-Information-First-Year-Enrolment.pdf",
+      "location": null,
+      "province": null,
+      "id": "40000000-0000-4000-8000-000000000016",
+      "institution_id": "10000000-0000-4000-8000-000000000010"
+    },
+    {
+      "n": 17,
+      "inst": 5,
+      "title": "Switch On Point — Soweto",
+      "url": "https://www.staysouthpoint.co.za/soweto",
+      "location": "Soweto",
+      "province": "Gauteng",
+      "apply": "https://my.staysouthpoint.co.za/",
+      "id": "40000000-0000-4000-8000-000000000017",
+      "institution_id": "10000000-0000-4000-8000-000000000005"
+    }
+  ]
+}

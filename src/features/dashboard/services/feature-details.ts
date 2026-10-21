@@ -1,0 +1,54 @@
+import type { DashboardData, Feature } from './dashboard-model'
+import { deriveDashboard } from './dashboard-model'
+import { grade10Insight } from './grade10-guidance'
+
+type FeatureDetails = { title: string; description: string; items: string[]; link?: string; action?: string }
+export function dashboardFeatureDetails(data: DashboardData | null, account: { name: string; email: string }): Record<Feature, FeatureDetails> {
+  const view = data ? deriveDashboard(data) : null
+  const labels = (ids: string[]) => data?.options.filter(option => ids.includes(option.id)).map(option => option.label) ?? []
+  const details: Record<Feature, FeatureDetails> = {
+    'subject-guide': { title: 'Your Grade 10 Subject Guide', description: 'Your saved planning information is available below. Subject recommendations and pathway impact calculations are not available yet.', items: view ? [...view.interests.map(value => 'Interest · ' + value), ...labels(view.answers.school_subject_ids).map(value => 'Available school subject · ' + value), ...labels(view.answers.future_interest_ids).map(value => 'Future curiosity · ' + value), ...(view.answers.school_subjects_unknown ? ['School subjects · Not known yet'] : []), ...(view.answers.future_exploring ? ['Future curiosity · Still exploring'] : [])] : [], link: '/onboarding/school-subjects', action: 'Review my school subjects' },
+    scan: { title: 'VIA Scan', description: view?.results.length ? 'Your latest saved subjects and marks. The planning labels are not admission assessments.' : 'Add your latest results to unlock your academic analysis. Uploaded reports are stored securely; enter your marks to use them in VIA.', items: view?.results.map(result => `${result.subject} · ${result.percentage}% · ${result.insight}`) ?? [], link: '/onboarding/results', action: 'Add or update my results' },
+    match: { title: 'VIA Match', description: data?.matches === null ? 'Your programme matches have not been calculated yet. Your saved results and interests will help shape them.' : 'Programme matches based on the information available in your VIA.', items: view?.matches?.map(match => `${match.programme} · ${match.institution}${match.percentage === null ? '' : ` · ${match.percentage}% Match`}${match.reason ? ` · ${match.reason}` : ''}`) ?? [], link: view?.results.length ? '/onboarding/study-plan' : '/onboarding/results', action: view?.results.length ? 'Review my study interests' : 'Add my results' },
+    institutions: { title: 'Institutions', description: 'Institution discovery is not available here yet. Your saved institution preferences are shown below.', items: labels(view?.answers.institution_type_ids ?? []), link: '/onboarding/preferences', action: 'Update institution preferences' },
+    programmes: { title: 'Programmes', description: 'Programme discovery is not available here yet. These are your saved study interests, not calculated programme matches.', items: view?.goals ?? [], link: '/onboarding/study-plan', action: 'Explore my study interests' },
+    fund: { title: 'Funding', description: data?.funding === null ? 'Funding opportunities have not been matched to your profile yet.' : 'Your available funding opportunities.', items: data?.funding?.map(item => `${item.title} · ${item.provider}`) ?? [], link: '/onboarding/preferences', action: 'Review funding preferences' },
+    stay: { title: 'Accommodation', description: 'Accommodation discovery is not available here yet. Review where you are open to studying while you plan your next steps.', items: view ? view.answers.location_mode === 'anywhere' ? ['Location preference · Anywhere in South Africa'] : labels(view.answers.province_ids) : [], link: '/onboarding/preferences', action: 'Review accommodation preferences' },
+    vault: { title: 'VIA Vault', description: data?.reports.length ? 'Your privately stored school reports. Open VIA Scan to view or manage your results.' : 'Your uploaded school reports will appear here. No documents have been added yet.', items: data?.reports.map(report => report.file_name) ?? [], link: '/onboarding/results', action: 'Manage my reports' },
+    progress: { title: 'VIA Progress', description: view?.suggestedTasks ? 'Suggested next actions based on your saved VIA. No application deadlines have been linked yet.' : 'Review your next actions and linked deadlines.', items: [], link: '/onboarding/welcome', action: view?.incomplete ? 'Continue my VIA setup' : 'Review my VIA setup' },
+    assist: { title: 'VIA Assist', description: 'Use your saved VIA to decide what to review next. A conversational guide is not available here yet.', items: view ? [view.config.focus, view.nextMove.title] : [], link: '/onboarding/welcome', action: 'Review my VIA profile' },
+    applications: { title: 'Application Readiness', description: 'These are profile basics you have saved, not an eligibility decision or a record of submitted applications. Check each programme’s official requirements before applying.', items: view?.basics.map(item => `${item.label} · ${item.ready ? 'Saved' : 'Needs attention'}`) ?? [], link: view?.incomplete ? '/onboarding/welcome' : !view?.results.length ? '/onboarding/results' : '/onboarding/preferences', action: 'Review my application basics' },
+    saved: { title: 'Saved', description: data?.savedLoading ? 'Loading your saved opportunities…' : data?.saved === null ? 'Saved opportunities could not be loaded. Retry loading your dashboard.' : 'Your saved institutions, programmes, funding and accommodation.', items: [] },
+    profile: { title: 'Your VIA profile', description: view?.incomplete ? 'Complete your VIA setup to personalise your journey.' : 'Your account and saved study profile.', items: [`Name · ${account.name}`, `Email · ${account.email}`, ...(view?.stage ? [`Study stage · ${view.stage}`] : []), ...(view?.goals.length ? [`Study interests · ${view.goals.join(', ')}`] : [])], link: view?.incomplete ? '/onboarding/welcome' : '/onboarding/current', action: view?.incomplete ? 'Continue my VIA setup' : 'Update my VIA profile' },
+    settings: { title: 'Settings', description: 'Manage your VIA study preferences or use the profile menu to log out.', items: [], link: '/onboarding/preferences', action: 'Edit my preferences' },
+    whatif: { title: 'See what this could unlock', description: '', items: [] },
+  }
+  for(const [feature,title,path] of [['institutions','Saved Institutions','/institutions'],['programmes','Saved Programmes','/programmes'],['fund','Saved Funding','/bursaries'],['stay','Saved Accommodation','/accommodation']] as const){
+    details[feature]={title,description:'Opportunities you have saved to your VIA.',items:[],link:path,action:`Explore ${title.slice(6)}`}
+  }
+  if (data?.profile?.education_stage === 'grade_9') {
+    details.match.link = '/onboarding/future-curiosity'; details.match.action = 'Review my future curiosity'
+    for (const key of ['applications','settings'] as const) { details[key].link = '/onboarding/current'; details[key].action = 'Review my education stage' }
+  }
+  if (!data) for (const feature of Object.keys(details) as Feature[]) {
+    if (!['profile','settings','whatif'].includes(feature)) details[feature] = { ...details[feature], description: 'Your learner data is not available right now. Retry loading the dashboard to see your saved information.', items: [] }
+  }
+  if(data?.record?.flow_version===4&&view){
+    const j=view.answers.journey
+    details.settings={title:'Settings',description:'Update your stage when your journey changes. Existing profile information and academic history are kept.',items:[],link:'/onboarding/current',action:'Update my stage'}
+    if(data.profile?.education_stage==='tertiary'){details.profile.link='/onboarding/year-of-study';details.profile.action='Update my year of study';details.assist={title:'My Support',description:'The areas you asked VIA to help with.',items:j.support,link:'/onboarding/support',action:'Update my support needs'}}
+    else if(data.profile?.education_stage==='accepted')details.assist={title:'Preparing for student life',description:'Your saved arrangements for starting higher education.',items:[`Accommodation · ${j.accommodation_status||'Not added'}`,`Registration · ${j.registration_status||'Not added'}`,...j.funding_methods.map(value=>`Funding · ${value}`)],link:'/onboarding/current',action:'Update my stage'}
+    if(['grade_12','post_matric'].includes(data.profile?.education_stage??''))details.applications={title:'My Applications',description:'Applications you have added to VIA. Complete and track the official application with the institution.',items:j.applications.map(row=>`${row.programme} · ${row.status}`),link:'/onboarding/applications',action:'Update my applications'}
+    if(data.profile?.education_stage==='grade_9')details['subject-guide']={...details['subject-guide'],items:[...j.interests.map(value=>'Interest · '+value),...j.careers.map(value=>'Career interest · '+value)],link:'/onboarding/career-interests',action:'Update my career interests'}
+  }
+  if (data?.profile?.education_stage === 'grade_9' && view) {
+    details.scan = { ...details.scan, title: 'Your Results', description: view.results.length ? 'Your latest saved subjects and marks. These labels help you plan your learning.' : 'Add your latest results to see your strengths and where you may need support.', items: view.results.map(result => `${result.subject} · ${result.percentage}% · ${result.percentage >= 70 ? 'Strong' : result.percentage >= 50 ? 'Doing well' : 'Needs attention'}`) }
+    details['subject-guide'] = { title: 'Your Grade 10 Subject Choices', description: 'Explore the subject choices and pathways on your dashboard. Your results, interests, career interests and programme requirements help shape this guidance.', items: [...view.interests, ...view.goals], link: '/dashboard#grade9-choices', action: 'Explore subject choices' }
+  }
+  if (data?.profile?.education_stage === 'grade_10' && view) {
+    details.saved = { title: 'Saved Programmes', description: 'Programmes you have saved to explore as your journey continues.', items: [] }
+    details.scan = { ...details.scan, title: 'Your Results', description: `Your latest saved subjects and marks${view.answers.report_grade ? ` · Grade ${view.answers.report_grade}` : ' · grade not recorded'}. These are planning labels, not admission assessments.`, items: view.results.map(result => `${result.subject} · ${result.percentage}% · ${grade10Insight(result.percentage)}`) }
+    details['subject-guide'] = { title: 'Your Subjects & Pathways', description: 'Explore the pathways connected to the subjects you already take.', items: data.options.filter(option => view.answers.school_subject_ids.includes(option.id)).map(option => option.label), link: '/onboarding/school-subjects', action: 'Update my subjects' }
+  }
+  return details
+}

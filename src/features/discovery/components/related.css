@@ -1,0 +1,11 @@
+.via-public-related { margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(184,210,190,.22); }
+.via-public-related-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin-top: 20px; }
+.via-public-related-group { min-width: 0; }
+.via-public-related-group h3 { margin: 0 0 10px; font-size: 17px; }
+.via-public-related-group p, .via-public-related > p, .via-public-related-loading { font-size: 12px; line-height: 1.7; }
+.via-public-related-group ul { padding: 0; list-style: none; margin: 0; }
+.via-public-related-group li { padding-block: 8px; }
+.via-public-related-group .via-public-text-button { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; width: 100%; text-align: left; font-size: 13px; overflow-wrap: anywhere; }
+.via-public-related-group .via-public-text-button svg { flex-shrink: 0; }
+.via-public-related-group small { display: block; font-size: 11px; line-height: 1.6; opacity: .8; }
+@media(max-width:600px) { .via-public-related-grid { grid-template-columns: minmax(0,1fr); gap: 20px; } }

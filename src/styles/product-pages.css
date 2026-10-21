@@ -1,0 +1,1303 @@
+/* The product theme is opt-in; the landing page keeps its own composition. */
+.via-product-page {
+  --product-ink: #f4f8f5;
+  --product-muted: rgba(241, 248, 244, 0.7);
+  --product-lime: #d6e8ae;
+  --product-line: rgba(255, 255, 255, 0.17);
+  --via-text-primary: var(--product-ink);
+  --via-text-secondary: var(--product-muted);
+  --via-text-muted: rgba(241, 248, 244, 0.6);
+  --via-glass: rgba(255, 255, 255, 0.065);
+  --via-glass-light: rgba(255, 255, 255, 0.065);
+  --via-glass-strong: rgba(255, 255, 255, 0.1);
+  --via-glass-border: var(--product-line);
+  --via-border: var(--product-line);
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: clip;
+  background:
+    radial-gradient(ellipse at 85% 5%, rgba(130, 169, 115, 0.12), transparent 55%),
+    #082f29;
+  color: var(--product-ink);
+  font-family: var(--font-family);
+  font-weight: 400;
+  color-scheme: dark;
+}
+
+.via-product-page :is(h1, h2, h3, .via-card-title) {
+  color: var(--product-ink);
+  font-family: var(--font-family);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.via-product-page :is(h1 span, .via-signup-hero-title span) {
+  color: var(--product-lime);
+}
+
+.via-product-page :is(.via-product-eyebrow, .via-dashboard-hero > div > p) {
+  margin: 0 0 18px;
+  color: var(--product-lime);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.via-product-page :is(.via-glass, .via-onboarding-panel, .via-payoff-panel) {
+  max-height: none;
+  overflow: visible;
+  border: 1px solid var(--product-line);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.065);
+  box-shadow: 0 24px 70px rgba(0, 18, 13, 0.16);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.via-product-page :is(.via-auth-background, .via-onboarding-bg) {
+  position: absolute;
+  z-index: -3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.via-product-page :is(.via-auth-wash, .via-onboarding-wash, .via-onboarding-choice-wash) {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(3, 37, 31, 0.94), rgba(4, 51, 41, 0.78) 47%, rgba(4, 47, 38, 0.52)),
+    linear-gradient(180deg, rgba(3, 31, 26, 0.2), rgba(3, 31, 26, 0.6));
+  pointer-events: none;
+}
+
+.via-product-page .via-auth-glow {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: radial-gradient(ellipse at 75% 15%, rgba(214, 232, 174, 0.1), transparent 55%);
+  pointer-events: none;
+}
+
+.via-product-page .via-onboarding-arc {
+  z-index: -1;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: transparent;
+}
+
+.via-product-page :is(.via-onboarding-arc-two, .via-onboarding-arc-three) {
+  display: none;
+}
+
+.via-product-page :is(.via-card-logo, .via-signup-brand, .via-onboarding-logo, .via-onboarding-panel-logo, .via-payoff-logo, .via-dashboard-header img) {
+  display: block;
+  width: 88px;
+  height: 62px;
+  object-fit: contain;
+  filter: none;
+}
+
+.via-product-page .via-icon-circle {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.09);
+  color: var(--product-lime);
+  box-shadow: none;
+}
+
+.via-product-page .via-icon-circle svg {
+  stroke-width: 1.6;
+}
+
+.via-product-page :is(.via-button, .via-onboarding-start, .via-onboarding-continue-action, .via-ready-action, .via-onboarding-upload-primary, .via-dashboard-grid button) {
+  min-height: 52px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  background: var(--via-surface);
+  color: var(--via-primary-deep);
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 8px 24px rgba(0, 20, 15, 0.12);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.via-product-page :is(.via-onboarding-secondary-action, .via-onboarding-save-action, .via-onboarding-upload-secondary) {
+  min-height: 48px;
+  border: 1px solid var(--product-line);
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--product-ink);
+  font-size: 13px;
+  font-weight: 400;
+  box-shadow: none;
+}
+
+.via-product-page :is(a, button, input):focus-visible {
+  outline: 2px solid var(--product-lime);
+  outline-offset: 4px;
+  box-shadow: none;
+}
+
+.via-product-page :is(.via-onboarding-start, .via-onboarding-continue-action, .via-ready-action, .via-dashboard-grid button):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 20, 15, 0.2);
+}
+
+/* Authentication: the original forms and authentication calls stay intact. */
+.via-product-page.via-auth-page {
+  display: grid;
+  place-items: center;
+  padding: 48px 24px;
+}
+
+.via-product-page .via-login-shell {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.via-product-page :is(.via-login-card, .via-signup-card) {
+  width: 100%;
+  max-width: 520px;
+  padding: clamp(28px, 3.5vw, 46px);
+}
+
+.via-product-page .via-card-logo {
+  margin: 0 auto 24px;
+}
+
+.via-product-page .via-card-title {
+  font-size: clamp(30px, 3vw, 40px);
+}
+
+.via-product-page .via-card-subtitle {
+  margin-top: 12px;
+  color: var(--product-muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.via-product-page .via-signup-form {
+  gap: 19px;
+  margin-top: 30px;
+}
+
+.via-product-page .via-field {
+  min-width: 0;
+}
+
+.via-product-page .via-field-label {
+  color: rgba(244, 248, 245, 0.86);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.via-product-page .via-input-base {
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 14px;
+  background: rgba(4, 37, 29, 0.35);
+  color: var(--product-ink);
+  font-size: 15px;
+  font-weight: 400;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.via-product-page .via-input-base::placeholder {
+  color: rgba(241, 248, 244, 0.45);
+}
+
+.via-product-page .via-input-base:focus {
+  border-color: var(--product-lime);
+  background: rgba(4, 37, 29, 0.5);
+  box-shadow: 0 0 0 3px rgba(214, 232, 174, 0.1);
+}
+
+.via-product-page .via-input-base:-webkit-autofill {
+  -webkit-text-fill-color: var(--product-ink);
+  box-shadow: 0 0 0 1000px #143d32 inset;
+  caret-color: var(--product-ink);
+}
+
+.via-product-page :is(.via-input-icon-slot, .via-input-action) {
+  color: rgba(214, 232, 174, 0.75);
+}
+
+.via-product-page .via-input-action button:hover {
+  color: #fff;
+}
+
+.via-product-page :is(.via-agreement, .via-login-link) {
+  color: var(--product-muted);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.via-product-page .via-login-link {
+  margin-top: 26px;
+}
+
+.via-product-page :is(.via-login-action, .via-login-action:visited, .via-agreement a) {
+  color: var(--product-lime);
+  font-weight: 500;
+  text-decoration-color: rgba(214, 232, 174, 0.4);
+  text-underline-offset: 4px;
+}
+
+.via-product-page :is(.via-login-action:hover, .via-agreement a:hover) {
+  color: #fff;
+}
+
+.via-product-page input:is([type='checkbox'], [type='radio']) {
+  accent-color: var(--product-lime);
+}
+
+.via-product-page .via-message {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.via-product-page .via-message-error {
+  border-color: rgba(255, 165, 165, 0.3);
+  background: rgba(127, 29, 29, 0.23);
+  color: #ffcece;
+}
+
+.via-product-page .via-message-success {
+  border-color: rgba(214, 232, 174, 0.3);
+  background: rgba(214, 232, 174, 0.09);
+  color: var(--product-lime);
+}
+
+.via-product-page .via-signup-shell {
+  width: 100%;
+  height: auto;
+  min-height: 100svh;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 520px);
+  align-items: center;
+  gap: clamp(40px, 7vw, 120px);
+  padding: 40px clamp(24px, 6vw, 104px);
+}
+
+.via-product-page .via-signup-intro {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.via-product-page .via-signup-copy {
+  max-width: 520px;
+  margin: 38px 0 0;
+}
+
+.via-product-page .via-signup-hero-title {
+  font-size: clamp(44px, 4.4vw, 70px);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.via-product-page .via-signup-hero-subtitle {
+  margin-top: 22px;
+  color: var(--product-muted);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.via-product-page .via-journey-list {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  max-width: 390px;
+  gap: 10px;
+  margin: 32px 0 0;
+}
+
+.via-product-page .via-journey-pill {
+  width: 100%;
+  min-height: 64px;
+  gap: 14px;
+  padding: 10px 16px;
+  border: 1px solid var(--product-line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow: none;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.via-product-page .via-journey-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.via-product-page .via-journey-icon {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: transparent;
+}
+
+.via-product-page .via-journey-title {
+  color: var(--product-ink);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.via-product-page .via-journey-number {
+  margin-right: 10px;
+  color: rgba(214, 232, 174, 0.6);
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.via-product-page .via-journey-description {
+  color: var(--product-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.via-product-page .via-signup-card-section {
+  width: 100%;
+}
+
+/* Onboarding keeps all existing steps in the document flow, including long forms. */
+.via-product-page:is(.via-onboarding-choice, .via-payoff-page) {
+  padding: clamp(20px, 4vw, 56px);
+}
+
+.via-product-page :is(.via-onboarding-panel, .via-payoff-panel) {
+  width: min(100%, 1180px);
+  padding: clamp(24px, 4vw, 52px);
+}
+
+.via-product-page .via-onboarding-panel-header {
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  justify-items: stretch;
+  gap: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--product-line);
+}
+
+.via-product-page :is(.via-onboarding-progress, .via-onboarding-panel-progress, .via-onboarding-panel-time) {
+  color: var(--product-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.via-product-page :is(.via-onboarding-progress, .via-onboarding-panel-progress) div span {
+  width: 13px;
+  height: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: #183b2e;
+}
+
+.via-product-page :is(.via-onboarding-progress, .via-onboarding-panel-progress) div :is(.is-complete, .is-active) {
+  border-color: var(--product-lime);
+  background: var(--product-lime);
+}
+
+.via-product-page :is(.via-onboarding-progress, .via-onboarding-panel-progress) div .is-active {
+  box-shadow: 0 0 0 4px rgba(214, 232, 174, 0.12);
+}
+
+.via-product-page .via-onboarding-panel-copy {
+  margin-top: 36px;
+}
+
+.via-product-page .via-onboarding-panel-copy h1 {
+  font-size: clamp(32px, 3.5vw, 48px);
+}
+
+.via-product-page .via-onboarding-panel-copy p {
+  max-width: 640px;
+  margin-top: 16px;
+  color: var(--product-muted);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.via-product-page .via-onboarding-options {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.via-product-page .via-onboarding-option {
+  min-height: 112px;
+  gap: 14px;
+  border: 1px solid var(--product-line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--product-ink);
+  box-shadow: none;
+  padding-block: 20px;
+}
+
+.via-product-page .via-onboarding-option strong {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.via-product-page .via-onboarding-option small {
+  margin-top: 7px;
+  color: var(--product-muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.via-product-page .via-onboarding-option-arrow {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+}
+
+.via-product-page .via-onboarding-option:hover {
+  border-color: rgba(214, 232, 174, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.via-product-page .via-onboarding-option:has(input:checked) {
+  border-color: rgba(214, 232, 174, 0.65);
+  background: rgba(214, 232, 174, 0.1);
+}
+
+.via-product-page .via-onboarding-option:focus-within {
+  outline: 2px solid var(--product-lime);
+  outline-offset: 3px;
+}
+
+.via-product-page .via-onboarding-panel-footer {
+  grid-template-columns: 1fr auto auto;
+  gap: 14px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-color: var(--product-line);
+}
+
+.via-product-page .via-onboarding-secondary-action {
+  justify-self: start;
+  width: auto;
+}
+
+.via-product-page :is(.via-onboarding-upload-card, .via-onboarding-manual-card, .via-onboarding-considering-card, .via-onboarding-preference-card, .via-ready-summary article, .via-dashboard-grid article) {
+  border: 1px solid var(--product-line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow: 0 16px 45px rgba(0, 18, 13, 0.08);
+}
+
+.via-product-page .via-onboarding-upload-card {
+  width: min(700px, 100%);
+  margin-top: 30px;
+  padding: 14px;
+}
+
+.via-product-page .via-onboarding-upload-drop {
+  gap: 5px;
+  border-color: rgba(214, 232, 174, 0.35);
+  border-radius: 16px;
+  padding: 30px 20px;
+}
+
+.via-product-page .via-onboarding-upload-actions {
+  margin-top: 20px;
+}
+
+.via-product-page :is(.via-onboarding-upload-drop h2, .via-onboarding-manual-card h2, .via-onboarding-considering-card h2, .via-onboarding-preference-card h2) {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.via-product-page :is(.via-onboarding-upload-drop p, .via-onboarding-upload-drop small, .via-onboarding-manual-card p, .via-onboarding-considering-card p, .via-onboarding-preference-card p) {
+  color: var(--product-muted);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.via-product-page .via-onboarding-upload-drop small {
+  margin-top: 16px;
+  font-size: 11px;
+}
+
+.via-product-page .via-onboarding-or {
+  margin-block: 20px;
+  color: var(--product-muted);
+  font-weight: 400;
+}
+
+.via-product-page .via-onboarding-or span {
+  background: var(--product-line);
+}
+
+.via-product-page .via-onboarding-manual-card {
+  width: min(700px, 100%);
+  padding: 22px;
+}
+
+.via-product-page .via-onboarding-manual-card button {
+  color: var(--product-lime);
+  font-weight: 400;
+  text-underline-offset: 4px;
+}
+
+.via-product-page :is(.via-onboarding-considering-card, .via-onboarding-preference-card) {
+  margin-top: 24px;
+  padding: 26px;
+}
+
+.via-product-page .via-onboarding-search-field {
+  min-height: 50px;
+  border-color: rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  background: rgba(3, 33, 26, 0.3);
+  color: var(--product-lime);
+}
+
+.via-product-page .via-onboarding-search-field:focus-within {
+  outline: 2px solid var(--product-lime);
+  outline-offset: 3px;
+}
+
+.via-product-page .via-onboarding-search-field input {
+  min-height: 44px;
+  color: var(--product-ink);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.via-product-page .via-onboarding-search-field input::placeholder {
+  color: rgba(241, 248, 244, 0.5);
+}
+
+.via-product-page :is(.via-onboarding-tags span, .via-onboarding-choice-pills span) {
+  min-height: 34px;
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--product-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.via-product-page :is(.via-onboarding-tags span, .via-onboarding-choice-pills .is-selected) {
+  border-color: rgba(214, 232, 174, 0.3);
+  background: rgba(214, 232, 174, 0.1);
+  color: var(--product-lime);
+}
+
+.via-product-page .via-onboarding-final-preferences {
+  gap: 18px;
+  margin-top: 0;
+}
+
+.via-product-page .via-onboarding-preference-card label {
+  min-height: 40px;
+  color: var(--product-ink);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.via-product-page .via-onboarding-note {
+  width: fit-content;
+  max-width: 100%;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  color: var(--product-muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Welcome, preparation and completion screens use the same quiet hierarchy. */
+.via-product-page.via-onboarding-welcome {
+  padding: 32px clamp(24px, 6vw, 100px) 56px;
+}
+
+.via-product-page .via-onboarding-header {
+  align-items: center;
+}
+
+.via-product-page .via-onboarding-content {
+  width: min(760px, 65%);
+  margin-top: 64px;
+}
+
+.via-product-page .via-onboarding-copy h1 {
+  font-size: clamp(44px, 5.2vw, 76px);
+  line-height: 1;
+}
+
+.via-product-page .via-onboarding-lede {
+  margin-top: 24px;
+  color: var(--product-ink);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.via-product-page .via-onboarding-body {
+  max-width: 550px;
+  color: var(--product-muted);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.via-product-page .via-onboarding-journey {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 40px;
+  padding-top: 26px;
+  border-top: 1px solid var(--product-line);
+}
+
+.via-product-page .via-onboarding-step h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.via-product-page .via-onboarding-step p {
+  margin-top: 8px;
+  color: var(--product-muted);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.via-product-page .via-onboarding-step-arrow {
+  display: none;
+}
+
+.via-product-page .via-onboarding-start {
+  width: auto;
+  margin-top: 36px;
+  padding-inline: 32px;
+}
+
+.via-product-page .via-onboarding-meta {
+  margin-top: 24px;
+  color: var(--product-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.via-product-page .via-payoff-copy {
+  margin-top: 28px;
+}
+
+.via-product-page .via-payoff-copy h1 {
+  font-size: clamp(36px, 4.5vw, 62px);
+}
+
+.via-product-page .via-payoff-copy p {
+  max-width: 580px;
+  margin-top: 20px;
+  color: var(--product-muted);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.via-product-page .via-build-layout {
+  margin-top: 40px;
+}
+
+.via-product-page .via-orbit-ring {
+  border-color: rgba(214, 232, 174, 0.25);
+}
+
+.via-product-page .via-orbit-dot {
+  background: var(--product-lime);
+  box-shadow: 0 0 0 9px rgba(214, 232, 174, 0.08);
+}
+
+.via-product-page .via-orbit-core {
+  border-color: var(--product-line);
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--product-lime);
+  box-shadow: 0 20px 50px rgba(0, 18, 13, 0.16);
+}
+
+.via-product-page .via-build-item {
+  min-height: 70px;
+  border-color: var(--product-line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(241, 248, 244, 0.6);
+  padding: 14px;
+}
+
+.via-product-page .via-build-item.is-complete {
+  background: rgba(214, 232, 174, 0.055);
+  color: var(--product-lime);
+}
+
+.via-product-page .via-build-item.is-active {
+  border-color: rgba(214, 232, 174, 0.4);
+  background: rgba(214, 232, 174, 0.12);
+  color: var(--product-ink);
+}
+
+.via-product-page .via-build-item strong {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.via-product-page .via-build-item p {
+  margin-top: 5px;
+  color: var(--product-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.via-product-page .via-payoff-note {
+  margin-top: 30px;
+  color: var(--product-muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.via-product-page .via-ready-summary {
+  width: min(900px, 100%);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.via-product-page .via-ready-summary article {
+  padding: 26px;
+}
+
+.via-product-page .via-ready-summary h2 {
+  margin-top: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.via-product-page .via-ready-summary p {
+  margin-top: 12px;
+  color: var(--product-muted);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.via-product-page .via-ready-action {
+  margin-top: 36px;
+}
+
+/* Dashboard stays practical, with the same materials as the public pages. */
+.via-product-page.via-dashboard-page {
+  padding: 32px clamp(24px, 6vw, 104px) 64px;
+}
+
+.via-product-page .via-dashboard-header {
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--product-line);
+}
+
+.via-product-page .via-dashboard-header span {
+  color: var(--product-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.via-product-page .via-dashboard-hero {
+  margin-top: 64px;
+  padding: 50px;
+  border: 1px solid var(--product-line);
+  border-radius: 30px;
+  background: radial-gradient(ellipse at 100% 0%, rgba(214, 232, 174, 0.1), transparent 65%), rgba(255, 255, 255, 0.035);
+}
+
+.via-product-page .via-dashboard-hero h1 {
+  max-width: 730px;
+  font-size: clamp(40px, 5vw, 72px);
+}
+
+.via-product-page .via-dashboard-hero span {
+  max-width: 520px;
+  margin-top: 24px;
+  color: var(--product-muted);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.via-product-page .via-dashboard-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.via-product-page .via-dashboard-grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+}
+
+.via-product-page .via-dashboard-grid h2 {
+  margin-top: 26px;
+  font-size: 23px;
+}
+
+.via-product-page .via-dashboard-grid p {
+  margin: 14px 0 28px;
+  color: var(--product-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.via-product-page .via-dashboard-grid button {
+  margin-top: auto;
+  padding-inline: 22px;
+}
+
+@media (max-width: 1100px) {
+  .via-product-page .via-signup-shell {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+    gap: 32px;
+    padding-inline: 32px;
+  }
+
+  .via-product-page .via-onboarding-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .via-product-page .via-onboarding-content {
+    width: min(760px, 100%);
+  }
+
+  .via-product-page .via-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 980px) {
+  .via-product-page .via-onboarding-panel-header {
+    grid-template-columns: 1fr auto;
+    text-align: left;
+  }
+
+  .via-product-page .via-onboarding-panel-time {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .via-product-page .via-onboarding-panel-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .via-product-page .via-onboarding-save-action {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: center;
+    width: auto;
+    background: transparent;
+  }
+
+  .via-product-page .via-onboarding-continue-action {
+    min-width: 0;
+    justify-self: end;
+  }
+
+  .via-product-page .via-onboarding-secondary-action {
+    width: 100%;
+  }
+
+  .via-product-page .via-build-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .via-product-page .via-orbit-graphic {
+    width: 200px;
+  }
+
+  .via-product-page .via-onboarding-final-preferences {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .via-product-page.via-auth-page {
+    padding: 28px 20px;
+  }
+
+  .via-product-page .via-signup-shell {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    gap: 32px;
+    padding: 24px 20px 36px;
+  }
+
+  .via-product-page .via-signup-intro {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .via-product-page .via-signup-copy {
+    margin-top: 28px;
+  }
+
+  .via-product-page .via-signup-hero-title {
+    font-size: clamp(40px, 9vw, 56px);
+  }
+
+  .via-product-page .via-journey-list {
+    max-width: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .via-product-page .via-journey-pill {
+    width: auto;
+    min-height: 40px;
+    flex: 1 0 28%;
+    justify-content: center;
+    margin: 0;
+    padding: 9px 12px;
+    border-radius: 14px;
+  }
+
+  .via-product-page :is(.via-journey-icon-wrap, .via-journey-number, .via-journey-description) {
+    display: none;
+  }
+
+  .via-product-page .via-journey-title {
+    font-size: 12px;
+  }
+
+  .via-product-page .via-signup-card-section {
+    justify-content: center;
+  }
+
+  .via-product-page .via-signup-card {
+    margin-inline: auto;
+  }
+
+  .via-product-page .via-onboarding-options {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .via-product-page .via-onboarding-panel-copy {
+    margin-top: 28px;
+    text-align: left;
+  }
+
+  .via-product-page .via-onboarding-option {
+    min-height: 96px;
+  }
+
+  .via-product-page .via-onboarding-panel-header {
+    gap: 16px;
+    padding-bottom: 22px;
+  }
+
+  .via-product-page :is(.via-onboarding-panel-logo, .via-payoff-logo) {
+    width: 70px;
+    height: 50px;
+  }
+
+  .via-product-page .via-onboarding-panel-progress div {
+    gap: 6px;
+  }
+
+  .via-product-page .via-onboarding-panel-progress div span {
+    width: 11px;
+    height: 11px;
+  }
+
+  .via-product-page .via-onboarding-manual-card {
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .via-product-page .via-onboarding-manual-card button {
+    grid-column: 1 / -1;
+    min-height: 40px;
+  }
+
+  .via-product-page .via-onboarding-content {
+    margin-top: 42px;
+  }
+
+  .via-product-page .via-onboarding-journey {
+    grid-template-columns: 1fr;
+  }
+
+  .via-product-page .via-onboarding-step {
+    grid-template-columns: 50px 1fr;
+    justify-items: start;
+    gap: 0 16px;
+    text-align: left;
+  }
+
+  .via-product-page .via-onboarding-step-icon {
+    grid-row: span 2;
+  }
+
+  .via-product-page .via-onboarding-step h2 {
+    margin-top: 4px;
+  }
+
+  .via-product-page .via-onboarding-start {
+    width: 100%;
+  }
+
+  .via-product-page .via-ready-summary {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .via-product-page .via-dashboard-header {
+    gap: 20px;
+  }
+
+  .via-product-page .via-dashboard-header span {
+    max-width: 150px;
+    text-align: right;
+  }
+
+  .via-product-page .via-dashboard-hero {
+    margin-top: 32px;
+    padding: 30px 24px;
+  }
+
+  .via-product-page .via-dashboard-grid article {
+    padding: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .via-product-page *,
+  .via-product-page *::before,
+  .via-product-page *::after {
+    animation: none;
+    transition: none;
+  }
+
+  .via-product-page :is(a, button):hover {
+    transform: none;
+  }
+}
+
+/* Keep the remaining study-plan section central without changing its contents. */
+.via-product-page.via-onboarding-study-plan .via-onboarding-considering-card {
+  width: min(820px, 100%);
+  margin: clamp(20px, 3dvh, 36px) auto 0;
+}
+
+/* Steps 2-7 share these layout-only adjustments; Step 1 stays unchanged. */
+.via-product-page.via-onboarding-choice {
+  min-height: 100dvh;
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .via-product-page.via-onboarding-choice :is(.via-onboarding-current-options, .via-onboarding-interest-options) > :last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1101px) {
+  .via-product-page.via-onboarding-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100dvh;
+    padding: clamp(12px, 2dvh, 24px) clamp(20px, 3vw, 42px);
+    /* A short viewport or enlarged text can still reach every control. */
+    overflow-y: auto;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel {
+    flex-shrink: 0;
+    margin-block: auto;
+    padding-block: clamp(18px, 2dvh, 26px);
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel-header {
+    padding-bottom: clamp(8px, 1.4dvh, 16px);
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel-copy {
+    margin-top: clamp(12px, 2dvh, 22px);
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel-copy p {
+    max-width: 900px;
+    margin-top: 10px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-options {
+    gap: 12px;
+    margin-top: clamp(14px, 2dvh, 24px);
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-option {
+    min-height: clamp(90px, 11.5dvh, 112px);
+    padding-block: clamp(12px, 1.8dvh, 18px);
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel-footer {
+    margin-top: clamp(14px, 2dvh, 24px);
+    padding-top: clamp(10px, 1.5dvh, 18px);
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-current-options {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-current-options > * {
+    grid-column: span 2;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-current-options > :nth-last-child(-n + 2) {
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .via-product-page.via-onboarding-choice .via-onboarding-interest-options {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-interest-options > * {
+    grid-column: span 3;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-interest-options > :nth-last-child(-n + 3) {
+    grid-column: span 4;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-personality-options {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1101px) and (max-height: 800px) {
+  .via-product-page.via-onboarding-choice {
+    padding-block: 8px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel {
+    padding-block: 12px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel-header {
+    padding-bottom: 8px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel-copy {
+    margin-top: 10px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel-copy p {
+    margin-top: 6px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-options {
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-option {
+    min-height: 86px;
+    padding-block: 10px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-panel-footer {
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-upload-card {
+    margin-top: 14px;
+    padding: 10px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-upload-drop {
+    gap: 2px;
+    padding-block: 14px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-upload-actions {
+    margin-top: 12px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-upload-drop small {
+    margin-top: 8px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-or {
+    margin-block: 8px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-manual-card {
+    padding-block: 14px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-preference-card {
+    margin-top: 10px;
+    padding-block: 8px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-preference-card p {
+    margin: 2px 0 4px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-preference-card label {
+    min-height: 28px;
+  }
+
+  .via-product-page.via-onboarding-choice .via-onboarding-note {
+    margin-top: 6px;
+    padding-block: 0;
+  }
+}

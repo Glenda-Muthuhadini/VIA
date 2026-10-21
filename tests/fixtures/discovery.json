@@ -1,0 +1,1139 @@
+{
+  "institutions": {
+    "items": [
+      {
+        "id": "10000000-0000-4000-8000-000000000004",
+        "kind": "institutions",
+        "slug": "false-bay",
+        "field": null,
+        "title": "False Bay TVET College",
+        "campus": null,
+        "cycles": [],
+        "fields": null,
+        "contact": null,
+        "faculty": null,
+        "coverage": null,
+        "duration": null,
+        "location": "Cape Town",
+        "logo_url": null,
+        "overview": "Explore college study areas and follow the official college guidance for applications.",
+        "provider": null,
+        "province": "Western Cape",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://falsebaycollege.co.za/",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "False Bay TVET College",
+        "website_url": "https://falsebaycollege.co.za/",
+        "abbreviation": "False Bay",
+        "funding_type": null,
+        "institutions": [],
+        "price_period": null,
+        "requirements": [],
+        "study_levels": null,
+        "academic_year": null,
+        "qualification": null,
+        "institution_id": null,
+        "starting_price": null,
+        "application_url": null,
+        "career_keywords": null,
+        "programme_count": 1,
+        "institution_name": null,
+        "institution_type": "TVET College",
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": null
+      },
+      {
+        "id": "10000000-0000-4000-8000-000000000002",
+        "kind": "institutions",
+        "slug": "uct",
+        "field": null,
+        "title": "University of Cape Town",
+        "campus": null,
+        "cycles": [
+          {
+            "id": "c542daf5-dc6b-47f6-afdb-b9d6790f6878",
+            "fee": null,
+            "label": "Undergraduate applications",
+            "fee_note": null,
+            "opens_on": "2026-04-01",
+            "closes_on": "2026-07-31",
+            "source_url": "https://uct.ac.za/applicants-and-students",
+            "source_name": "UCT applicants and students",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "fields": null,
+        "contact": null,
+        "faculty": null,
+        "coverage": null,
+        "duration": null,
+        "location": "Cape Town",
+        "logo_url": null,
+        "overview": "Explore listed study options and official undergraduate information from UCT.",
+        "provider": null,
+        "province": "Western Cape",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://uct.ac.za/applicants-and-students",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "University of Cape Town",
+        "website_url": "https://uct.ac.za/",
+        "abbreviation": "UCT",
+        "funding_type": null,
+        "institutions": [],
+        "price_period": null,
+        "requirements": [],
+        "study_levels": null,
+        "academic_year": 2027,
+        "qualification": null,
+        "institution_id": null,
+        "starting_price": null,
+        "application_url": "https://sit.uct.ac.za/how-apply",
+        "career_keywords": null,
+        "programme_count": 3,
+        "institution_name": null,
+        "institution_type": "University",
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": null
+      },
+      {
+        "id": "10000000-0000-4000-8000-000000000003",
+        "kind": "institutions",
+        "slug": "up",
+        "field": null,
+        "title": "University of Pretoria",
+        "campus": null,
+        "cycles": [],
+        "fields": null,
+        "contact": null,
+        "faculty": null,
+        "coverage": null,
+        "duration": null,
+        "location": "Pretoria",
+        "logo_url": null,
+        "overview": "Explore the listed programme and confirm the current intake requirements directly with UP.",
+        "provider": null,
+        "province": "Gauteng",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://www.up.ac.za/science-mathematics-technology-education/pdf/generator/study_programmes/67441",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "University of Pretoria: Study@UP 2026",
+        "website_url": "https://www.up.ac.za/",
+        "abbreviation": "UP",
+        "funding_type": null,
+        "institutions": [],
+        "price_period": null,
+        "requirements": [],
+        "study_levels": null,
+        "academic_year": 2026,
+        "qualification": null,
+        "institution_id": null,
+        "starting_price": null,
+        "application_url": null,
+        "career_keywords": null,
+        "programme_count": 1,
+        "institution_name": null,
+        "institution_type": "University",
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": null
+      },
+      {
+        "id": "10000000-0000-4000-8000-000000000001",
+        "kind": "institutions",
+        "slug": "wits",
+        "field": null,
+        "title": "University of the Witwatersrand",
+        "campus": null,
+        "cycles": [
+          {
+            "id": "92927858-b08b-4265-9d12-cd6175ba3908",
+            "fee": 100,
+            "label": "General undergraduate programmes; some programmes close earlier",
+            "fee_note": "Consult the official application guide for your applicant category and programme.",
+            "opens_on": null,
+            "closes_on": "2026-09-30",
+            "source_url": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+            "source_name": "Wits undergraduate applications",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "fields": null,
+        "contact": null,
+        "faculty": null,
+        "coverage": null,
+        "duration": null,
+        "location": "Johannesburg",
+        "logo_url": null,
+        "overview": "Explore the programmes listed in VIA and check current application guidance with Wits.",
+        "provider": null,
+        "province": "Gauteng",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "Wits University",
+        "website_url": "https://www.wits.ac.za/",
+        "abbreviation": "Wits",
+        "funding_type": null,
+        "institutions": [],
+        "price_period": null,
+        "requirements": [],
+        "study_levels": null,
+        "academic_year": 2027,
+        "qualification": null,
+        "institution_id": null,
+        "starting_price": null,
+        "application_url": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+        "career_keywords": null,
+        "programme_count": 1,
+        "institution_name": null,
+        "institution_type": "University",
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": null
+      }
+    ],
+    "total": 4,
+    "facets": {
+      "location": [
+        "Cape Town",
+        "Johannesburg",
+        "Pretoria"
+      ],
+      "province": [
+        "Gauteng",
+        "Western Cape"
+      ],
+      "institution_type": [
+        "TVET College",
+        "University"
+      ]
+    },
+    "institutions": [
+      {
+        "label": "False Bay TVET College",
+        "value": "10000000-0000-4000-8000-000000000004"
+      },
+      {
+        "label": "University of Cape Town",
+        "value": "10000000-0000-4000-8000-000000000002"
+      },
+      {
+        "label": "University of Pretoria",
+        "value": "10000000-0000-4000-8000-000000000003"
+      },
+      {
+        "label": "University of the Witwatersrand",
+        "value": "10000000-0000-4000-8000-000000000001"
+      }
+    ]
+  },
+  "programmes": {
+    "items": [
+      {
+        "id": "20000000-0000-4000-8000-000000000002",
+        "kind": "programmes",
+        "slug": "uct-ba-informatics-computer-science",
+        "field": "Technology",
+        "title": "BA Informatics — Computer Science",
+        "campus": null,
+        "cycles": [
+          {
+            "id": "c542daf5-dc6b-47f6-afdb-b9d6790f6878",
+            "fee": null,
+            "label": "Undergraduate applications",
+            "fee_note": null,
+            "opens_on": "2026-04-01",
+            "closes_on": "2026-07-31",
+            "source_url": "https://uct.ac.za/applicants-and-students",
+            "source_name": "UCT applicants and students",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "fields": null,
+        "contact": null,
+        "faculty": "Humanities",
+        "coverage": null,
+        "duration": "3 years",
+        "location": "Cape Town",
+        "logo_url": null,
+        "overview": "Combine computing with a humanities subject. This listing refers to the Computer Science route; the Information Systems route has different entry conditions.",
+        "provider": null,
+        "province": "Western Cape",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://sit.uct.ac.za/ba-informatics",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "UCT School of Information Technology",
+        "website_url": "https://sit.uct.ac.za/ba-informatics",
+        "abbreviation": null,
+        "funding_type": null,
+        "institutions": [
+          {
+            "id": "10000000-0000-4000-8000-000000000002",
+            "name": "University of Cape Town"
+          }
+        ],
+        "price_period": null,
+        "requirements": [
+          {
+            "id": "4564baaf-384c-4548-a0f8-7a0cea960eea",
+            "detail": "The Computer Science route requires at least 70% NSC Mathematics. Consult the Humanities handbook for the full BA admission criteria.",
+            "subject": "Mathematics",
+            "source_url": "https://sit.uct.ac.za/ba-informatics",
+            "recommended": false,
+            "source_name": "UCT School of IT",
+            "academic_year": null,
+            "last_verified_at": "2026-10-16T00:00:00+00:00",
+            "minimum_percentage": 70
+          }
+        ],
+        "study_levels": null,
+        "academic_year": null,
+        "qualification": "Bachelor",
+        "institution_id": "10000000-0000-4000-8000-000000000002",
+        "starting_price": null,
+        "application_url": "https://sit.uct.ac.za/how-apply",
+        "career_keywords": [
+          "software development",
+          "business analysis",
+          "informatics"
+        ],
+        "programme_count": null,
+        "institution_name": "University of Cape Town",
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": true
+      },
+      {
+        "id": "20000000-0000-4000-8000-000000000003",
+        "kind": "programmes",
+        "slug": "uct-business-science-computer-science",
+        "field": "Business",
+        "title": "BBusSc specialising in Computer Science",
+        "campus": null,
+        "cycles": [
+          {
+            "id": "c542daf5-dc6b-47f6-afdb-b9d6790f6878",
+            "fee": null,
+            "label": "Undergraduate applications",
+            "fee_note": null,
+            "opens_on": "2026-04-01",
+            "closes_on": "2026-07-31",
+            "source_url": "https://uct.ac.za/applicants-and-students",
+            "source_name": "UCT applicants and students",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "fields": null,
+        "contact": null,
+        "faculty": "Commerce",
+        "coverage": null,
+        "duration": "4 years",
+        "location": "Cape Town",
+        "logo_url": null,
+        "overview": "Study computing alongside business science. Consult the current faculty handbook for the complete admission and progression rules.",
+        "provider": null,
+        "province": "Western Cape",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://sit.uct.ac.za/bachelor-business-science-specialising-computer-science",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "UCT School of Information Technology",
+        "website_url": "https://sit.uct.ac.za/bachelor-business-science-specialising-computer-science",
+        "abbreviation": null,
+        "funding_type": null,
+        "institutions": [
+          {
+            "id": "10000000-0000-4000-8000-000000000002",
+            "name": "University of Cape Town"
+          }
+        ],
+        "price_period": null,
+        "requirements": [],
+        "study_levels": null,
+        "academic_year": null,
+        "qualification": "Bachelor",
+        "institution_id": "10000000-0000-4000-8000-000000000002",
+        "starting_price": null,
+        "application_url": "https://sit.uct.ac.za/how-apply",
+        "career_keywords": [
+          "computing",
+          "business science"
+        ],
+        "programme_count": null,
+        "institution_name": "University of Cape Town",
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": null
+      },
+      {
+        "id": "20000000-0000-4000-8000-000000000005",
+        "kind": "programmes",
+        "slug": "uct-bsc-computer-science-major",
+        "field": "Technology",
+        "title": "BSc — Computer Science major",
+        "campus": null,
+        "cycles": [
+          {
+            "id": "c542daf5-dc6b-47f6-afdb-b9d6790f6878",
+            "fee": null,
+            "label": "Undergraduate applications",
+            "fee_note": null,
+            "opens_on": "2026-04-01",
+            "closes_on": "2026-07-31",
+            "source_url": "https://uct.ac.za/applicants-and-students",
+            "source_name": "UCT applicants and students",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "fields": null,
+        "contact": null,
+        "faculty": "Science",
+        "coverage": null,
+        "duration": null,
+        "location": "Cape Town",
+        "logo_url": null,
+        "overview": "The Department of Computer Science offers a Computer Science major within the Bachelor of Science. Check the current Science faculty requirements and available major combinations.",
+        "provider": null,
+        "province": "Western Cape",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://sit.uct.ac.za/department-computer-science",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "UCT Department of Computer Science",
+        "website_url": "https://sit.uct.ac.za/department-computer-science",
+        "abbreviation": null,
+        "funding_type": null,
+        "institutions": [
+          {
+            "id": "10000000-0000-4000-8000-000000000002",
+            "name": "University of Cape Town"
+          }
+        ],
+        "price_period": null,
+        "requirements": [],
+        "study_levels": null,
+        "academic_year": null,
+        "qualification": "Bachelor",
+        "institution_id": "10000000-0000-4000-8000-000000000002",
+        "starting_price": null,
+        "application_url": "https://sit.uct.ac.za/how-apply",
+        "career_keywords": [
+          "computer science",
+          "computing"
+        ],
+        "programme_count": null,
+        "institution_name": "University of Cape Town",
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": null
+      },
+      {
+        "id": "20000000-0000-4000-8000-000000000001",
+        "kind": "programmes",
+        "slug": "wits-computer-science",
+        "field": "Technology",
+        "title": "BSc Computer Science",
+        "campus": null,
+        "cycles": [
+          {
+            "id": "92927858-b08b-4265-9d12-cd6175ba3908",
+            "fee": 100,
+            "label": "General undergraduate programmes; some programmes close earlier",
+            "fee_note": "Consult the official application guide for your applicant category and programme.",
+            "opens_on": null,
+            "closes_on": "2026-09-30",
+            "source_url": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+            "source_name": "Wits undergraduate applications",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "fields": null,
+        "contact": null,
+        "faculty": "Science",
+        "coverage": null,
+        "duration": "3 years",
+        "location": "Johannesburg",
+        "logo_url": null,
+        "overview": "Study computational problem solving, programming and the mathematical foundations of computing. Minimum requirements do not guarantee selection.",
+        "provider": null,
+        "province": "Gauteng",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/",
+        "eligibility": [],
+        "minimum_aps": 44,
+        "source_name": "Wits official programme page",
+        "website_url": "https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/",
+        "abbreviation": null,
+        "funding_type": null,
+        "institutions": [
+          {
+            "id": "10000000-0000-4000-8000-000000000001",
+            "name": "University of the Witwatersrand"
+          }
+        ],
+        "price_period": null,
+        "requirements": [
+          {
+            "id": "fa34997d-2b6a-4962-a830-153e573bc9e4",
+            "detail": "Home Language or First Additional Language at NSC Level 5. Check the official page for NBT and selection conditions.",
+            "subject": "English",
+            "source_url": "https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/",
+            "recommended": false,
+            "source_name": "Wits official programme page",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00",
+            "minimum_percentage": null
+          },
+          {
+            "id": "24a1163e-4f51-4dc9-9e73-2291b8d985ae",
+            "detail": "NSC Level 6. Wits uses its own APS calculation; minimum entry requirements do not guarantee a place.",
+            "subject": "Mathematics",
+            "source_url": "https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/",
+            "recommended": false,
+            "source_name": "Wits official programme page",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00",
+            "minimum_percentage": null
+          }
+        ],
+        "study_levels": null,
+        "academic_year": 2027,
+        "qualification": "Bachelor",
+        "institution_id": "10000000-0000-4000-8000-000000000001",
+        "starting_price": null,
+        "application_url": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+        "career_keywords": [
+          "software development",
+          "data science",
+          "computing"
+        ],
+        "programme_count": null,
+        "institution_name": "University of the Witwatersrand",
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": true
+      },
+      {
+        "id": "20000000-0000-4000-8000-000000000004",
+        "kind": "programmes",
+        "slug": "up-computer-science",
+        "field": "Technology",
+        "title": "BSc Computer Science",
+        "campus": null,
+        "cycles": [],
+        "fields": null,
+        "contact": null,
+        "faculty": null,
+        "coverage": null,
+        "duration": null,
+        "location": "Pretoria",
+        "logo_url": null,
+        "overview": "Computing study option from the 2026 Study@UP programme information. This is a historical intake snapshot; confirm requirements for the year you intend to apply.",
+        "provider": null,
+        "province": "Gauteng",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://www.up.ac.za/science-mathematics-technology-education/pdf/generator/study_programmes/67441",
+        "eligibility": [],
+        "minimum_aps": 30,
+        "source_name": "University of Pretoria: Study@UP 2026",
+        "website_url": "https://www.up.ac.za/",
+        "abbreviation": null,
+        "funding_type": null,
+        "institutions": [
+          {
+            "id": "10000000-0000-4000-8000-000000000003",
+            "name": "University of Pretoria"
+          }
+        ],
+        "price_period": null,
+        "requirements": [
+          {
+            "id": "6488fcae-aa43-49f2-94cf-f2e0e3492657",
+            "detail": "2026 programme information: English Home Language or First Additional Language Level 5.",
+            "subject": "English",
+            "source_url": "https://www.up.ac.za/science-mathematics-technology-education/pdf/generator/study_programmes/67441",
+            "recommended": false,
+            "source_name": "Study@UP 2026",
+            "academic_year": 2026,
+            "last_verified_at": "2026-10-16T00:00:00+00:00",
+            "minimum_percentage": null
+          },
+          {
+            "id": "298ec371-9ce3-4b97-b42d-b308cf5aa5d0",
+            "detail": "2026 programme information: Mathematics NSC/IEB Level 6. Confirm your intended intake year with UP.",
+            "subject": "Mathematics",
+            "source_url": "https://www.up.ac.za/science-mathematics-technology-education/pdf/generator/study_programmes/67441",
+            "recommended": false,
+            "source_name": "Study@UP 2026",
+            "academic_year": 2026,
+            "last_verified_at": "2026-10-16T00:00:00+00:00",
+            "minimum_percentage": null
+          }
+        ],
+        "study_levels": null,
+        "academic_year": 2026,
+        "qualification": "Bachelor",
+        "institution_id": "10000000-0000-4000-8000-000000000003",
+        "starting_price": null,
+        "application_url": null,
+        "career_keywords": [
+          "computing",
+          "computer science"
+        ],
+        "programme_count": null,
+        "institution_name": "University of Pretoria",
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": true
+      },
+      {
+        "id": "20000000-0000-4000-8000-000000000006",
+        "kind": "programmes",
+        "slug": "false-bay-ncv-it",
+        "field": "Technology",
+        "title": "NC(V) Information Technology and Computer Science",
+        "campus": null,
+        "cycles": [],
+        "fields": null,
+        "contact": null,
+        "faculty": null,
+        "coverage": null,
+        "duration": null,
+        "location": "Cape Town",
+        "logo_url": null,
+        "overview": "A vocational computing qualification listed by the college at NQF Levels 2–4. Confirm campus, entry requirements and the next intake with False Bay.",
+        "provider": null,
+        "province": "Western Cape",
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://falsebaycollege.co.za/ict/",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "False Bay TVET College: ICT programmes",
+        "website_url": "https://falsebaycollege.co.za/ict/",
+        "abbreviation": null,
+        "funding_type": null,
+        "institutions": [
+          {
+            "id": "10000000-0000-4000-8000-000000000004",
+            "name": "False Bay TVET College"
+          }
+        ],
+        "price_period": null,
+        "requirements": [],
+        "study_levels": null,
+        "academic_year": null,
+        "qualification": "National Certificate (Vocational)",
+        "institution_id": "10000000-0000-4000-8000-000000000004",
+        "starting_price": null,
+        "application_url": null,
+        "career_keywords": [],
+        "programme_count": null,
+        "institution_name": "False Bay TVET College",
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": null,
+        "mathematics_required": null
+      }
+    ],
+    "total": 6,
+    "facets": {
+      "field": [
+        "Business",
+        "Technology"
+      ],
+      "location": [
+        "Cape Town",
+        "Johannesburg",
+        "Pretoria"
+      ],
+      "province": [
+        "Gauteng",
+        "Western Cape"
+      ],
+      "qualification": [
+        "Bachelor",
+        "National Certificate (Vocational)"
+      ]
+    },
+    "institutions": [
+      {
+        "label": "False Bay TVET College",
+        "value": "10000000-0000-4000-8000-000000000004"
+      },
+      {
+        "label": "University of Cape Town",
+        "value": "10000000-0000-4000-8000-000000000002"
+      },
+      {
+        "label": "University of Pretoria",
+        "value": "10000000-0000-4000-8000-000000000003"
+      },
+      {
+        "label": "University of the Witwatersrand",
+        "value": "10000000-0000-4000-8000-000000000001"
+      }
+    ]
+  },
+  "bursaries": {
+    "items": [
+      {
+        "id": "30000000-0000-4000-8000-000000000002",
+        "kind": "bursaries",
+        "slug": "funza-lushaka",
+        "field": null,
+        "title": "Funza Lushaka Bursary",
+        "campus": null,
+        "cycles": [
+          {
+            "id": "c1edb733-f720-4f51-adc1-928b3f1f7cc7",
+            "fee": null,
+            "label": "New applicants; returning bursars have a different deadline",
+            "fee_note": null,
+            "opens_on": "2026-10-01",
+            "closes_on": "2027-01-31",
+            "source_url": "https://www.funzalushaka.doe.gov.za/Home/",
+            "source_name": "Funza Lushaka 2027 applications",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "fields": [
+          "Education"
+        ],
+        "contact": null,
+        "faculty": null,
+        "coverage": [],
+        "duration": null,
+        "location": null,
+        "logo_url": null,
+        "overview": "Initial teacher-education funding. Consult the current bursary rules, priority teaching areas and service obligations before applying.",
+        "provider": "Department of Basic Education",
+        "province": null,
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://www.funzalushaka.doe.gov.za/Home/",
+        "eligibility": [
+          {
+            "id": "5b825cc9-f6c3-4e6e-b12b-405254936294",
+            "criterion": "First-time applicants must be 30 years or younger. Check the current priority teaching areas, admission and service requirements. Returning bursars have a separate deadline of 30 November 2026.",
+            "source_url": "https://www.funzalushaka.doe.gov.za/Home/",
+            "source_name": "Funza Lushaka application guidance",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "minimum_aps": null,
+        "source_name": "Department of Basic Education: Funza Lushaka",
+        "website_url": "https://www.funzalushaka.doe.gov.za/Home/",
+        "abbreviation": null,
+        "funding_type": "Teaching bursary",
+        "institutions": [],
+        "price_period": null,
+        "requirements": [],
+        "study_levels": [
+          "Initial teacher education"
+        ],
+        "academic_year": 2027,
+        "qualification": null,
+        "institution_id": null,
+        "starting_price": null,
+        "application_url": "https://www.funzalushaka.doe.gov.za/Home/",
+        "career_keywords": null,
+        "programme_count": null,
+        "institution_name": null,
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": [],
+        "mathematics_required": null
+      },
+      {
+        "id": "30000000-0000-4000-8000-000000000001",
+        "kind": "bursaries",
+        "slug": "nsfas-bursary",
+        "field": null,
+        "title": "NSFAS Bursary",
+        "campus": null,
+        "cycles": [
+          {
+            "id": "dc810d07-8f61-4181-b8d3-b69e8683bcb1",
+            "fee": 0,
+            "label": "2027 student funding applications",
+            "fee_note": "NSFAS states that applying is free.",
+            "opens_on": "2026-09-18",
+            "closes_on": "2026-10-31",
+            "source_url": "https://www.nsfas.org.za/content/how-to-apply.html",
+            "source_name": "NSFAS application guidance",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "fields": [],
+        "contact": null,
+        "faculty": null,
+        "coverage": [
+          "Tuition",
+          "Learning materials",
+          "Living allowance",
+          "Accommodation where applicable"
+        ],
+        "duration": null,
+        "location": null,
+        "logo_url": null,
+        "overview": "Government student funding for approved undergraduate study at public universities and TVET colleges, subject to the applicable financial and academic rules.",
+        "provider": "National Student Financial Aid Scheme",
+        "province": null,
+        "amenities": null,
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": null,
+        "source_url": "https://www.nsfas.org.za/content/how-to-apply.html",
+        "eligibility": [
+          {
+            "id": "53685b49-ed7d-470c-bb17-051f0dabbae4",
+            "criterion": "Funding is for approved undergraduate qualifications at public universities or TVET colleges, subject to the applicable financial and academic rules. An application is not a funding award.",
+            "source_url": "https://www.nsfas.org.za/content/faqs.html",
+            "source_name": "NSFAS FAQs",
+            "academic_year": 2027,
+            "last_verified_at": "2026-10-16T00:00:00+00:00"
+          }
+        ],
+        "minimum_aps": null,
+        "source_name": "NSFAS: 2027 applications",
+        "website_url": "https://www.nsfas.org.za/content/",
+        "abbreviation": null,
+        "funding_type": "Government bursary",
+        "institutions": [],
+        "price_period": null,
+        "requirements": [],
+        "study_levels": [
+          "Undergraduate",
+          "TVET"
+        ],
+        "academic_year": 2027,
+        "qualification": null,
+        "institution_id": null,
+        "starting_price": null,
+        "application_url": "https://www.nsfas.org.za/content/how-to-apply.html",
+        "career_keywords": null,
+        "programme_count": null,
+        "institution_name": null,
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": null,
+        "required_documents": [
+          "NSFAS consent form",
+          "Identity document",
+          "Additional documents requested by myNSFAS for your household"
+        ],
+        "mathematics_required": null
+      }
+    ],
+    "total": 2,
+    "facets": {
+      "field": [
+        "Education"
+      ],
+      "coverage": [
+        "Accommodation where applicable",
+        "Learning materials",
+        "Living allowance",
+        "Tuition"
+      ],
+      "study_level": [
+        "Initial teacher education",
+        "TVET",
+        "Undergraduate"
+      ],
+      "funding_type": [
+        "Government bursary",
+        "Teaching bursary"
+      ]
+    },
+    "institutions": [
+      {
+        "label": "False Bay TVET College",
+        "value": "10000000-0000-4000-8000-000000000004"
+      },
+      {
+        "label": "University of Cape Town",
+        "value": "10000000-0000-4000-8000-000000000002"
+      },
+      {
+        "label": "University of Pretoria",
+        "value": "10000000-0000-4000-8000-000000000003"
+      },
+      {
+        "label": "University of the Witwatersrand",
+        "value": "10000000-0000-4000-8000-000000000001"
+      }
+    ]
+  },
+  "accommodation": {
+    "items": [
+      {
+        "id": "40000000-0000-4000-8000-000000000001",
+        "kind": "accommodation",
+        "slug": "south-point-ksi",
+        "field": null,
+        "title": "KSI — South Point",
+        "campus": null,
+        "cycles": [],
+        "fields": null,
+        "contact": "info@staysouthpoint.co.za",
+        "faculty": null,
+        "coverage": null,
+        "duration": null,
+        "location": "Braamfontein, Johannesburg",
+        "logo_url": null,
+        "overview": "Student residence in Braamfontein. Rates are a published 2026 snapshot; confirm the room, contract, current price and funding approval directly with the provider.",
+        "provider": null,
+        "province": "Gauteng",
+        "amenities": [
+          "Wi-Fi",
+          "Study rooms",
+          "Laundry",
+          "24-hour security"
+        ],
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": [
+          "Single room",
+          "Double sharing"
+        ],
+        "source_url": "https://www.staysouthpoint.co.za/joburg/ksi",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "South Point: KSI property page",
+        "website_url": "https://www.staysouthpoint.co.za/joburg/ksi",
+        "abbreviation": null,
+        "funding_type": null,
+        "institutions": [
+          {
+            "id": "10000000-0000-4000-8000-000000000001",
+            "name": "University of the Witwatersrand",
+            "campus": "Wits Main Campus",
+            "distance_km": null
+          }
+        ],
+        "price_period": "month",
+        "requirements": [],
+        "study_levels": null,
+        "academic_year": 2026,
+        "qualification": null,
+        "institution_id": null,
+        "starting_price": 5530,
+        "application_url": "https://my.staysouthpoint.co.za/",
+        "career_keywords": null,
+        "programme_count": null,
+        "institution_name": null,
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": "Student residence",
+        "required_documents": null,
+        "mathematics_required": null
+      },
+      {
+        "id": "40000000-0000-4000-8000-000000000002",
+        "kind": "accommodation",
+        "slug": "south-point-melridge",
+        "field": null,
+        "title": "Melridge House — South Point",
+        "campus": null,
+        "cycles": [],
+        "fields": null,
+        "contact": "info@staysouthpoint.co.za",
+        "faculty": null,
+        "coverage": null,
+        "duration": null,
+        "location": "Braamfontein, Johannesburg",
+        "logo_url": null,
+        "overview": "Student residence with shared-room options in Braamfontein. Published rates do not confirm current room availability; enquire with the provider.",
+        "provider": null,
+        "province": "Gauteng",
+        "amenities": [
+          "Wi-Fi",
+          "Study rooms",
+          "Laundry",
+          "24-hour security"
+        ],
+        "image_url": null,
+        "created_at": "2026-10-16T13:40:50.143582+00:00",
+        "room_types": [
+          "Single room",
+          "Double sharing",
+          "Triple sharing"
+        ],
+        "source_url": "https://www.staysouthpoint.co.za/joburg/melridge-house",
+        "eligibility": [],
+        "minimum_aps": null,
+        "source_name": "South Point: Melridge House property page",
+        "website_url": "https://www.staysouthpoint.co.za/joburg/melridge-house",
+        "abbreviation": null,
+        "funding_type": null,
+        "institutions": [
+          {
+            "id": "10000000-0000-4000-8000-000000000001",
+            "name": "University of the Witwatersrand",
+            "campus": "Wits Main Campus",
+            "distance_km": null
+          }
+        ],
+        "price_period": "month",
+        "requirements": [],
+        "study_levels": null,
+        "academic_year": 2026,
+        "qualification": null,
+        "institution_id": null,
+        "starting_price": 5130,
+        "application_url": "https://my.staysouthpoint.co.za/",
+        "career_keywords": null,
+        "programme_count": null,
+        "institution_name": null,
+        "institution_type": null,
+        "last_verified_at": "2026-10-16T00:00:00+00:00",
+        "nsfas_compatible": null,
+        "nsfas_source_url": null,
+        "nsfas_verified_at": null,
+        "accommodation_type": "Student residence",
+        "required_documents": null,
+        "mathematics_required": null
+      }
+    ],
+    "total": 2,
+    "facets": {
+      "amenity": [
+        "24-hour security",
+        "Laundry",
+        "Study rooms",
+        "Wi-Fi"
+      ],
+      "location": [
+        "Braamfontein, Johannesburg"
+      ],
+      "province": [
+        "Gauteng"
+      ],
+      "accommodation_type": [
+        "Student residence"
+      ]
+    },
+    "institutions": [
+      {
+        "label": "False Bay TVET College",
+        "value": "10000000-0000-4000-8000-000000000004"
+      },
+      {
+        "label": "University of Cape Town",
+        "value": "10000000-0000-4000-8000-000000000002"
+      },
+      {
+        "label": "University of Pretoria",
+        "value": "10000000-0000-4000-8000-000000000003"
+      },
+      {
+        "label": "University of the Witwatersrand",
+        "value": "10000000-0000-4000-8000-000000000001"
+      }
+    ]
+  }
+}

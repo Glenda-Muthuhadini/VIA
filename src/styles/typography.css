@@ -1,0 +1,62 @@
+:root {
+  font-family: var(--font-family);
+  color: var(--via-text-primary);
+  background: var(--via-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+.via-type-page-title {
+  font-size: clamp(42px, 3.3vw, var(--font-size-3xl));
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+h2,
+.via-type-section-title {
+  font-size: clamp(28px, 2.15vw, var(--font-size-2xl));
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.via-type-card-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.via-type-label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.via-type-body {
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.via-type-muted {
+  color: var(--via-text-muted);
+}

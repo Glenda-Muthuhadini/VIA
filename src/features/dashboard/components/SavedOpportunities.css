@@ -1,0 +1,7 @@
+.via-saved-groups { display: grid; gap: 24px; margin: 24px 0; min-width: 0; }
+.via-saved-groups h3 { font-size: 18px; margin-bottom: 12px; }
+.via-saved-groups ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.via-saved-groups li { min-width: 0; }
+.via-saved-groups a { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 46px; padding: 12px; border: 1px solid #ffffff30; border-radius: 12px; color: inherit; overflow-wrap: anywhere; }
+.via-saved-groups a:hover { background: #ffffff10; }
+.via-saved-groups a:focus-visible { outline: 2px solid #d6e8ae; outline-offset: 3px; }

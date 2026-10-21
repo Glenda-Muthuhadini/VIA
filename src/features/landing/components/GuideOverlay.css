@@ -1,0 +1,26 @@
+.via-public-dialog.via-guide-dialog { width: min(960px, calc(100vw - 32px)); max-width: calc(100vw - 32px); max-height: 90dvh; margin: auto; border-radius: 24px; color: #f4f8f5; background: #082f29; border-color: #ffffff30; }
+.via-guide-dialog .via-public-dialog-header { background: #103b32; color: #e2edc9; border-color: #ffffff26; min-height: 64px; }
+.via-guide-dialog .via-public-icon-button { flex-shrink: 0; min-width: 44px; min-height: 44px; color: #f4f8f5; background: #ffffff12; border-color: #ffffff30; }
+.via-guide-dialog .via-guide-dialog-content { padding: clamp(20px,4vw,40px); width: 100%; }
+.via-guide-intro { margin-bottom: 28px; }
+.via-guide-intro h2, .via-guide-dialog-content > h2 { font-size: clamp(26px,3.5vw,40px); font-weight: 500; line-height: 1.15; letter-spacing: -.035em; color: #e2edc9; margin-bottom: 18px; text-wrap: balance; }
+.via-guide-dialog .via-guide-eyebrow { margin-bottom: 16px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #d6e8ae; }
+.via-guide-dialog .via-student-back { margin-top: -8px; }
+.via-guide-dialog .via-student-article .via-public-button { margin-top: 28px; }
+.via-public-dialog.via-guide-dialog .via-public-button.is-primary { background: #d6e8ae; border-color: #d6e8ae; color: #123e30; }
+.via-guide-dialog .via-student-card-grid { gap: 16px; }
+.via-guide-dialog .via-student-guide-card { padding: clamp(20px,3vw,30px); }
+.via-guide-dialog .via-student-guide-card h3 { margin-top: 20px; }
+.via-guide-body { display: grid; gap: 22px; min-width: 0; }
+.via-guide-body > :is(p,ol,ul,section) { margin: 0; }
+.via-guide-body :is(ol,ul) { padding-left: 1.4rem; }
+.via-guide-body li { padding-left: 4px; overflow-wrap: anywhere; }
+.via-guide-body .via-guide-checklist { list-style: none; padding: 0; }
+.via-guide-checklist li { display: flex; align-items: flex-start; gap: 12px; padding: 0; }
+.via-guide-checklist svg { flex-shrink: 0; margin-top: 5px; color: #d6e8ae; }
+.via-guide-example { padding: clamp(18px,3vw,26px); border: 1px solid #d6e8ae40; border-radius: 16px; background: #ffffff05; }
+.via-guide-example dl { display: grid; gap: 12px; margin: 0; }
+.via-guide-example dl > div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; color: #c3d3cc; line-height: 1.75; }
+.via-guide-example dd { margin: 0; font-weight: 500; color: #e2edc9; }
+.via-guide-dialog .via-student-article > .via-public-button { min-height: 48px; }
+@media(max-width:700px) { .via-guide-dialog .via-student-card-grid { grid-template-columns: minmax(0,1fr); } }

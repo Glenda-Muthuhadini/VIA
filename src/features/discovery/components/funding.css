@@ -1,0 +1,45 @@
+.via-funding-card { position: relative; min-width: 0; }
+.via-funding-card-top { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 16px; min-height: 44px; }
+.via-funding-card-top .via-funding-save { position: relative; z-index: 1; margin-left: auto; }
+.via-funding-card h2 { overflow-wrap: anywhere; }
+.via-funding-card-open { text-align: left; }
+.via-funding-card-open::after { content: ''; position: absolute; inset: 0; border-radius: 28px; }
+.via-funding-card .via-funding-card-open:focus-visible { outline: none; }
+.via-funding-card-open:focus-visible::after { outline: 2px solid #d6e8ae; outline-offset: 4px; }
+.via-funding-provider { color: #b5ccbf; font-size: 14px; line-height: 1.7; margin-top: 10px; overflow-wrap: anywhere; }
+.via-funding-type { color: #e2edc9; font-size: 14px; line-height: 1.6; margin-top: 20px; }
+.via-funding-coverage { color: #c5d7cc; font-size: 14px; line-height: 1.8; margin-block: 22px; overflow-wrap: anywhere; }
+.via-funding-closing { color: #d6e8ae; font-size: 13px; line-height: 1.7; }
+.via-funding-card .via-funding-closing { margin-top: auto; }
+.via-funding-card-cta { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 48px; margin-top: 20px; color: #d6e8ae; font-size: 14px; }
+.via-funding-demo { padding: 5px 9px; border: 1px solid #d6e8ae40; border-radius: 8px; color: #d6e8ae; font-size: 11px; }
+.via-public-dialog:has(.via-funding-details) { width: min(880px,calc(100% - 32px)); max-height: 90dvh; margin: auto; border-radius: 24px; }
+.via-funding-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+.via-funding-header > div { min-width: 0; }
+.via-funding-header h2 { margin: 0; color: #f4f8f5; font-size: clamp(27px,3.2vw,40px); font-weight: 500; letter-spacing: -.035em; line-height: 1.2; overflow-wrap: anywhere; }
+.via-funding-header .via-funding-save { flex-shrink: 0; gap: 8px; min-height: 46px; }
+.via-funding-header .via-funding-closing { margin-top: 16px; }
+.via-funding-details .via-funding-demo-notice { padding: 14px 16px; margin-top: 22px; border: 1px solid #d6e8ae40; border-radius: 12px; color: #d6e8ae; font-size: 13px; line-height: 1.7; }
+.via-funding-section { margin-top: 30px; padding-top: 28px; border-top: 1px solid #ffffff20; }
+.via-funding-section h3 { margin: 0 0 16px; color: #e2edc9; font-size: clamp(19px,2.2vw,23px); font-weight: 500; line-height: 1.4; }
+.via-funding-section p, .via-funding-section li { color: #c5d7cc; font-size: 15px; line-height: 1.8; overflow-wrap: anywhere; }
+.via-funding-section .via-funding-list { list-style: disc; margin: 0; padding-left: 22px; }
+.via-funding-list li + li { margin-top: 8px; }
+.via-funding-details .via-funding-coverage-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px 20px; list-style: none; padding: 0; margin: 0; }
+.via-funding-coverage-list li { display: flex; align-items: flex-start; gap: 12px; }
+.via-funding-coverage-list svg { flex-shrink: 0; margin-top: 5px; color: #d6e8ae; }
+.via-funding-details .via-funding-study-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.via-funding-study-list li { padding: 7px 13px; border: 1px solid #ffffff26; border-radius: 12px; background: #ffffff08; }
+.via-funding-details .via-funding-programme-list { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 14px; }
+.via-funding-details :is(.via-funding-coverage-list,.via-funding-study-list,.via-funding-programme-list) li { margin: 0; }
+.via-funding-programme-list span { display: block; font-size: 12px; color: #a8c2b4; }
+.via-funding-section .via-funding-status { margin-top: 16px; font-size: 13px; }
+.via-funding-apply { display: flex; flex-wrap: wrap; justify-content: flex-end; margin-top: 32px; padding-top: 24px; border-top: 1px solid #ffffff20; }
+.via-funding-apply .via-public-button { min-height: 50px; white-space: normal; text-align: center; }
+.via-funding-apply p { color: #b5ccbf; font-size: 14px; line-height: 1.7; }
+.via-funding-details :is(button,a):focus-visible { outline: 2px solid #d6e8ae; outline-offset: 4px; }
+@media(max-width:600px) {
+ .via-funding-header { flex-direction: column; gap: 18px; }
+ .via-funding-details .via-funding-coverage-list { grid-template-columns: minmax(0,1fr); }
+ .via-funding-apply .via-public-button { width: 100%; }
+}

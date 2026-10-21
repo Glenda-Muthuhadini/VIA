@@ -1,0 +1,17 @@
+.via-discovery-experience .via-shared-save.via-save-button { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 46px; height: 46px; min-height: 46px; padding: 0; margin: 0; border: 1px solid #ffffff40; border-radius: 50%; background: #082f29e6; color: #eef5e9; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+.via-discovery-experience .via-shared-save.via-save-button:hover:not(:disabled) { background: #31574a; border-color: #d6e8ae; }
+.via-discovery-experience .via-shared-save.via-save-button[aria-pressed=true] { color: #d6e8ae; border-color: #d6e8ae; }
+.via-discovery-experience .via-shared-save.via-save-button:focus-visible { outline: 2px solid #d6e8ae; outline-offset: 4px; }
+.via-discovery-experience .via-shared-save.via-save-button:disabled { cursor: wait; opacity: .6; }
+.via-discovery-experience .via-opportunity-card { position: relative; min-width: 0; }
+.via-discovery-experience .via-opportunity-card .via-shared-save.via-save-button { position: absolute; top: 20px; right: 20px; z-index: 2; }
+.via-opportunity-card h2 { padding-right: 38px; }
+.via-opportunity-card .via-opportunity-card-top { min-height: 46px; }
+.via-save-heading { position: relative; padding-right: 68px; min-height: 46px; }
+.via-discovery-experience .via-save-heading .via-shared-save.via-save-button { position: absolute; top: 0; right: 0; }
+.via-save-heading > div { min-width: 0; }
+.via-programme-header.via-save-heading { flex-wrap: wrap; }
+.via-institution-card-open::after { content: ''; position: absolute; inset: 0; border-radius: 28px; }
+.via-institution-card-open:focus-visible::after { outline: 2px solid #d6e8ae; outline-offset: 4px; }
+.via-institution-card-actions { pointer-events: none; }
+@media(max-width:600px) { .via-save-heading { gap: 14px; } }

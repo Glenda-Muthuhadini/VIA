@@ -1,0 +1,299 @@
+.via-focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.via-focus-ring:focus-visible {
+  outline-color: var(--via-primary-light);
+  box-shadow: 0 0 0 4px rgba(47, 167, 122, 0.22);
+}
+
+.via-glass {
+  background: var(--via-glass);
+  border: 1px solid var(--via-glass-border);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.via-glass-light {
+  background: var(--via-glass-light);
+}
+
+.via-glass-default {
+  background: var(--via-glass);
+}
+
+.via-glass-strong {
+  background: var(--via-glass-strong);
+}
+
+.via-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+.via-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.via-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.68;
+}
+
+.via-button-small {
+  min-height: 40px;
+  padding: 0 var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+.via-button-medium {
+  min-height: 48px;
+  padding: 0 var(--space-5);
+  font-size: var(--font-size-md);
+}
+
+.via-button-large {
+  min-height: 56px;
+  padding: 0 var(--space-6);
+  font-size: 17px;
+}
+
+.via-button-primary {
+  background: var(--via-gradient);
+  color: var(--via-text-inverse);
+  box-shadow: 0 20px 34px rgba(6, 95, 70, 0.26);
+}
+
+.via-button-secondary {
+  background: var(--via-glass-strong);
+  color: var(--via-primary-dark);
+  border-color: var(--via-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.via-button-ghost {
+  background: transparent;
+  color: var(--via-primary-dark);
+}
+
+.via-button-danger {
+  background: var(--via-danger);
+  color: var(--via-text-inverse);
+  box-shadow: 0 18px 30px rgba(209, 67, 67, 0.18);
+}
+
+.via-field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.via-field-label {
+  color: var(--via-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.via-input-shell {
+  position: relative;
+}
+
+.via-input-base {
+  width: 100%;
+  height: 54px;
+  border-radius: 14px;
+  border: 1px solid var(--via-glass-border);
+  background: var(--via-glass-light);
+  color: var(--via-text-primary);
+  font-family: var(--font-family);
+  font-size: 15.5px;
+  font-weight: 500;
+  outline: none;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.via-input-base::placeholder {
+  color: var(--via-text-muted);
+}
+
+.via-input-base:focus {
+  border-color: var(--via-primary);
+  background: var(--via-glass);
+  box-shadow: 0 0 0 4px rgba(47, 167, 122, 0.18);
+}
+
+.via-input-base:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.via-input-base::-ms-reveal,
+.via-input-base::-ms-clear {
+  display: none;
+}
+
+.via-input-has-icon {
+  padding-left: 48px;
+}
+
+.via-input-has-action {
+  padding-right: 48px;
+}
+
+.via-input-icon-slot {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  color: var(--via-text-secondary);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.via-input-action {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--via-text-secondary);
+  transform: translateY(-50%);
+}
+
+.via-field-helper {
+  color: var(--via-text-muted);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+}
+
+.via-field-error {
+  color: var(--via-danger);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+
+.via-checkbox-control {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  accent-color: var(--via-primary);
+}
+
+.via-icon-circle {
+  display: inline-grid;
+  place-items: center;
+  border-radius: var(--radius-pill);
+}
+
+.via-icon-circle-small {
+  width: 34px;
+  height: 34px;
+}
+
+.via-icon-circle-medium {
+  width: 44px;
+  height: 44px;
+}
+
+.via-icon-circle-large {
+  width: 56px;
+  height: 56px;
+}
+
+.via-icon-circle-brand,
+.via-icon-circle-success {
+  background: var(--via-success-soft);
+  color: var(--via-primary);
+}
+
+.via-icon-circle-info {
+  background: var(--via-info-soft);
+  color: var(--via-info);
+}
+
+.via-icon-circle-warning {
+  background: var(--via-warning-soft);
+  color: var(--via-warning);
+}
+
+.via-icon-circle-danger {
+  background: var(--via-danger-soft);
+  color: var(--via-danger);
+}
+
+.via-icon-circle-neutral {
+  background: var(--via-neutral-soft);
+  color: var(--via-neutral);
+}
+
+.via-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  padding: 5px 10px;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.via-badge-success {
+  background: var(--via-success-soft);
+  color: var(--via-success);
+}
+
+.via-badge-info {
+  background: var(--via-info-soft);
+  color: var(--via-info);
+}
+
+.via-badge-warning {
+  background: var(--via-warning-soft);
+  color: var(--via-warning);
+}
+
+.via-badge-error {
+  background: var(--via-danger-soft);
+  color: var(--via-danger);
+}
+
+.via-badge-neutral {
+  background: var(--via-neutral-soft);
+  color: var(--via-neutral);
+}
+
+.via-progress {
+  height: 10px;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: var(--via-surface-soft);
+}
+
+.via-progress-bar {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--via-gradient);
+}

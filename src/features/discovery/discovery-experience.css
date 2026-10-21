@@ -1,0 +1,182 @@
+/* Focused explorer surfaces; navigation is styled by the shared PublicHeader. */
+.via-public.via-discovery-experience {
+  --discovery-ink: #f4f8f5;
+  --discovery-muted: #b5ccbf;
+  --discovery-lime: #d6e8ae;
+  --discovery-line: rgba(231, 250, 238, .17);
+  --discovery-gutter: clamp(20px, 5.6vw, 104px);
+  position: relative;
+  isolation: isolate;
+  min-height: 100dvh;
+  color: var(--discovery-ink);
+  background: radial-gradient(ellipse at 95% 80%, #164c3d 0, transparent 48%), #082f29;
+  color-scheme: dark;
+}
+.via-discovery-experience::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 auto;
+  height: clamp(680px, 72vw, 1100px);
+  pointer-events: none;
+  background: linear-gradient(0deg, #082f29 0%, rgba(8,47,41,.48) 35%, transparent 80%),
+    linear-gradient(90deg, rgba(3,36,30,.96), rgba(4,51,42,.78) 48%, rgba(6,61,50,.24)),
+    url('../../assets/images/Dreamy Teal-Gold Valley Sunrise.png') center 55% / cover no-repeat;
+}
+.via-discovery-experience :is(button,a,input,select):focus-visible {
+  outline-color: var(--discovery-lime);
+}
+.via-discovery-experience .via-public-skip { background: var(--discovery-lime); color: #123e30; }
+.via-discovery-experience .via-discovery-page, .via-discovery-signoff {
+  width: 100%;
+  max-width: 1800px;
+  margin-inline: auto;
+  padding-inline: var(--discovery-gutter);
+}
+.via-discovery-experience .via-discovery-page { padding-block: 0 48px; background: none; }
+.via-discovery-hero { padding-block: clamp(48px, 6.5vw, 104px) clamp(36px, 4vw, 64px); }
+.via-discovery-experience .via-discovery-intro { max-width: 1160px; }
+.via-discovery-experience .via-public-overline { color: var(--discovery-lime); font-weight: 400; letter-spacing: .16em; font-size: 11px; }
+.via-discovery-experience .via-discovery-intro h1 {
+  margin: 22px 0 26px;
+  color: var(--discovery-ink);
+  font-size: clamp(44px, 5.6vw, 88px);
+  font-weight: 500;
+  letter-spacing: -.055em;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+.via-discovery-experience .via-discovery-intro h1 span { color: var(--discovery-lime); }
+.via-discovery-experience .via-discovery-intro > p:not(.via-public-overline) {
+  max-width: 640px;
+  color: #cedfd4;
+  font-size: clamp(15px, 1.25vw, 18px);
+  line-height: 1.8;
+}
+.via-discovery-experience .via-discovery-public-note { display: inline-flex; align-items: center; gap: 9px; color: var(--discovery-muted); margin-top: 22px; }
+.via-discovery-experience .via-discovery-public-note::before { content: ''; width: 5px; height: 5px; flex-shrink: 0; border-radius: 50%; background: var(--discovery-lime); }
+.via-discovery-experience .via-discovery-search-row { max-width: 1000px; gap: 12px; margin-top: clamp(28px, 3vw, 44px); align-items: stretch; flex-wrap: nowrap; }
+.via-discovery-experience .via-discovery-search {
+  min-height: 66px;
+  border: 1px solid rgba(234,252,240,.3);
+  border-radius: 999px;
+  padding: 8px 24px;
+  background: rgba(216,245,229,.1);
+  color: var(--discovery-lime);
+  box-shadow: 0 16px 40px rgba(0,19,14,.12), inset 0 1px rgba(255,255,255,.05);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+.via-discovery-experience .via-discovery-search input { color: var(--discovery-ink); font-size: 15px; }
+.via-discovery-experience .via-discovery-search input::placeholder { color: #c2d6ca; opacity: 1; }
+.via-discovery-experience .via-discovery-search:focus-within { outline-color: var(--discovery-lime); }
+.via-discovery-experience .via-discovery-filter-toggle { display: inline-flex; flex-shrink: 0; width: auto; padding-inline: 26px; background: var(--discovery-lime); color: #183e30; border-color: transparent; }
+.via-discovery-active-filters { display: flex; flex-wrap: wrap; gap: 8px; max-width: 1000px; margin-top: 18px; }
+.via-discovery-active-filters button { display: inline-flex; align-items: center; gap: 12px; max-width: 100%; min-height: 44px; padding: 10px 16px; border: 1px solid var(--discovery-line); border-radius: 999px; background: rgba(209,243,222,.09); color: #dcebd7; font-size: 12px; text-align: left; }
+.via-discovery-active-filters button span { overflow-wrap: anywhere; }
+.via-discovery-active-filters button svg { flex-shrink: 0; }
+.via-discovery-experience .via-discovery-layout { display: block; margin-top: 0; }
+.via-discovery-experience .via-discovery-results-heading { padding-top: 20px; margin-bottom: 20px; border-top: 1px solid var(--discovery-line); color: var(--discovery-muted); font-size: 13px; }
+.via-discovery-experience .via-discovery-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: clamp(16px, 1.8vw, 28px); }
+.via-discovery-experience .via-opportunity-card {
+  padding: clamp(24px, 2.3vw, 36px);
+  border-color: var(--discovery-line);
+  border-radius: 28px;
+  background: radial-gradient(ellipse at 5% 0%, rgba(159,221,181,.1), transparent 70%), linear-gradient(135deg,rgba(227,250,233,.065),rgba(227,250,233,.025));
+  box-shadow: 0 20px 50px rgba(0,18,12,.12), inset 0 1px rgba(255,255,255,.035);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  transition: transform .2s, background .2s, border-color .2s, box-shadow .2s;
+}
+.via-discovery-experience .via-opportunity-card:hover { transform: translateY(-3px); border-color: rgba(220,240,219,.4); background-color: rgba(216,245,229,.035); box-shadow: 0 24px 56px rgba(0,18,12,.18); }
+.via-discovery-experience .via-opportunity-card-top { margin-bottom: 30px; }
+.via-discovery-experience .via-public-card-icon { width: 58px; height: 58px; border-radius: 18px; border-color: rgba(232,255,235,.23); background: linear-gradient(135deg,rgba(221,245,220,.2),rgba(221,245,220,.07)); color: var(--discovery-lime); }
+.via-discovery-experience .via-public-card-icon:has(img) { background: #eef6ec; padding: 5px; }
+.via-discovery-experience .via-public-icon-button { background: rgba(221,245,220,.07); color: #d2e5d2; border-color: var(--discovery-line); }
+.via-discovery-experience .via-save-button { background: transparent; border-color: transparent; }
+.via-discovery-experience .via-save-button:hover, .via-discovery-experience .via-save-button[aria-pressed="true"] { background: rgba(214,232,174,.15); color: var(--discovery-lime); border-color: var(--discovery-line); }
+.via-discovery-experience .via-opportunity-card .via-public-overline { color: #b5cdb9; font-size: 10px; }
+.via-discovery-experience .via-opportunity-card h2 { margin-top: 10px; color: var(--discovery-ink); font-size: clamp(22px, 1.8vw, 28px); letter-spacing: -.035em; line-height: 1.3; }
+.via-discovery-experience .via-public-location { color: var(--discovery-muted); font-size: 12px; }
+.via-discovery-experience .via-public-tags { gap: 8px; margin-top: 20px; }
+.via-discovery-experience .via-public-tags span { border: 1px solid rgba(223,249,227,.12); border-radius: 999px; background: rgba(223,249,227,.055); color: #c5dcc8; padding: 6px 11px; }
+.via-discovery-experience .via-public-card-facts { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px 14px; margin-block: 26px; }
+.via-discovery-experience .via-public-card-facts dt { color: #acc4b6; font-size: 11px; line-height: 1.5; }
+.via-discovery-experience .via-public-card-facts dd { color: #e1ebdf; font-size: 13px; }
+.via-discovery-experience .via-opportunity-card-bottom { border-color: var(--discovery-line); padding-top: 20px; }
+.via-discovery-experience .via-opportunity-card-bottom small { color: #adc4b5; font-size: 11px; }
+.via-discovery-experience .via-public-card-action { color: var(--discovery-lime); font-size: 13px; }
+.via-discovery-experience .via-public-card-action svg { box-sizing: content-box; padding: 10px; border: 1px solid var(--discovery-line); border-radius: 50%; background: rgba(222,245,221,.07); }
+.via-discovery-experience .via-public-button { background: rgba(223,249,227,.08); border-color: rgba(223,249,227,.25); color: #edf5e8; font-size: 13px; }
+.via-discovery-experience .via-public-button.is-primary, .via-discovery-experience a.via-public-button.is-primary, .via-discovery-experience .via-discovery-filter-toggle { background: var(--discovery-lime); color: #163f30; border-color: transparent; }
+.via-discovery-experience .via-public-button:hover { background: rgba(223,249,227,.16); }
+.via-discovery-experience .via-public-button.is-primary:hover, .via-discovery-experience .via-discovery-filter-toggle:hover { background: #e7f2ce; }
+.via-discovery-experience .via-public-text-button { color: var(--discovery-lime); }
+.via-discovery-experience .via-public-empty { background: rgba(224,246,227,.035); color: var(--discovery-muted); border-color: rgba(223,249,227,.23); }
+.via-discovery-experience .via-public-empty h2 { color: var(--discovery-ink); }
+.via-discovery-experience .via-public-skeleton { background: rgba(223,249,227,.04); border-color: var(--discovery-line); }
+.via-discovery-experience .via-public-skeleton span { background: rgba(223,249,227,.1); }
+.via-discovery-experience .via-public-pagination { gap: 16px; color: var(--discovery-muted); margin-top: 36px; }
+.via-discovery-experience .via-public-pagination button { color: #dce9d7; background: rgba(223,249,227,.06); border-color: var(--discovery-line); }
+.via-discovery-experience .via-public-inline-notice { background: rgba(223,249,227,.07); color: #dce9d7; border-color: var(--discovery-line); }
+.via-discovery-experience .via-discovery-quality-note { margin: 36px 0 0; max-width: 720px; color: #adc4b6; font-size: 12px; }
+.via-discovery-signoff { padding-block: 28px 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; border-top: 1px solid var(--discovery-line); color: #adc4b6; font-size: 12px; line-height: 1.7; }
+.via-discovery-signoff p { color: #d8e7d6; }
+
+/* Native dialogs retain focus trapping, Escape dismissal and focus restoration. */
+.via-discovery-experience .via-public-dialog { background: radial-gradient(ellipse at 100% 0%, #205347, transparent 65%), #103b32; color: #e1eddf; border-color: rgba(225,250,229,.24); box-shadow: 0 40px 120px rgba(0,14,10,.5); }
+.via-discovery-experience .via-public-dialog::backdrop { background: rgba(1,24,18,.7); backdrop-filter: blur(12px); }
+.via-discovery-experience .via-public-dialog-header { background: rgba(15,52,43,.96); color: #c4d9c8; border-color: var(--discovery-line); }
+.via-discovery-experience .via-public-detail-heading h2, .via-discovery-experience .via-public-conversion h2 { color: var(--discovery-ink); }
+.via-discovery-experience .via-public-detail-facts { background: rgba(223,249,227,.045); border-color: var(--discovery-line); }
+.via-discovery-experience .via-public-detail-facts dt { color: var(--discovery-muted); }
+.via-discovery-experience .via-public-tabs { border-color: var(--discovery-line); }
+.via-discovery-experience .via-public-tabs button { color: #c4d7c7; }
+.via-discovery-experience .via-public-tabs button[aria-selected="true"] { background: rgba(214,232,174,.14); color: var(--discovery-lime); border-color: rgba(214,232,174,.3); }
+.via-discovery-experience .via-public-detail-content .via-public-source { color: #abc5b3; }
+.via-discovery-experience .via-public-match-conversion { background: linear-gradient(135deg,rgba(214,232,174,.12),rgba(221,245,236,.035)); border-color: rgba(214,232,174,.24); }
+.via-discovery-experience .via-public-requirements li, .via-discovery-experience .via-public-cycle + .via-public-cycle { border-color: var(--discovery-line); }
+.via-discovery-experience .via-public-conversion p { color: #bdd3c3; }
+.via-discovery-experience .via-public-conversion .via-public-selected-title { color: var(--discovery-lime); }
+.via-discovery-experience .via-discovery-filter-controls { gap: 20px; }
+.via-discovery-experience .via-discovery-filter-heading h2 { color: var(--discovery-ink); font-size: 18px; font-weight: 500; }
+.via-discovery-experience .via-discovery-filter-heading button { color: var(--discovery-lime); }
+.via-discovery-experience .via-discovery-filter-controls > label, .via-discovery-experience .via-institution-programmes > label { color: #c8ddca; }
+.via-discovery-experience .via-discovery-filter-controls :is(input,select), .via-discovery-experience .via-institution-programmes input { border-color: rgba(223,249,227,.24); background: #214e40; color: #f0f6eb; min-height: 48px; }
+.via-discovery-experience .via-institution-programmes input::placeholder { color: #bed0c1; }
+.via-discovery-experience .via-discovery-filter-controls option { background: #214e40; color: #f0f6eb; }
+.via-discovery-experience .via-filter-note { color: var(--discovery-muted); border-color: var(--discovery-line); }
+.via-discovery-experience .via-public-filter-done { background: #143d31; border-color: var(--discovery-line); }
+
+@media (max-width: 1100px) {
+  .via-discovery-experience .via-discovery-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .via-discovery-experience .via-opportunity-card { padding: 26px; }
+}
+@media (max-width: 600px) {
+  .via-discovery-experience::before { height: 780px; background-position: center, center, 62% top; }
+  .via-discovery-hero { padding-block: 44px 32px; }
+  .via-discovery-experience .via-discovery-intro h1 { margin-block: 22px; font-size: clamp(42px, 10.3vw, 60px); line-height: 1.06; text-wrap: initial; }
+  .via-discovery-experience .is-accommodation .via-discovery-intro h1 { font-size: clamp(36px, 9.2vw, 52px); }
+  .via-discovery-experience .via-discovery-search-row { flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .via-discovery-experience .via-discovery-search { min-height: 60px; padding-inline: 18px; gap: 12px; border-radius: 20px; }
+  .via-discovery-experience .via-discovery-search input { font-size: 16px; }
+  .via-discovery-experience .via-discovery-search input::placeholder { font-size: 12px; }
+  .via-discovery-experience .via-discovery-filter-toggle { min-height: 46px; padding: 10px 20px; font-size: 13px; }
+  .via-discovery-experience .via-discovery-grid { grid-template-columns: minmax(0,1fr); }
+  .via-discovery-experience .via-discovery-results-heading { font-size: 12px; gap: 0; }
+  .via-discovery-experience .via-opportunity-card { padding: 26px; }
+  .via-discovery-experience .via-opportunity-card h2 { font-size: 25px; }
+  .via-discovery-experience .via-public-dialog, .via-discovery-experience .via-public-dialog.is-compact { max-height: 94dvh; }
+  .via-discovery-experience .via-public-detail-heading .via-public-card-icon { width: 44px; height: 44px; border-radius: 13px; }
+  .via-discovery-experience .via-public-filter-done { padding-bottom: max(16px, env(safe-area-inset-bottom)); }
+  .via-discovery-experience .via-public-detail-facts { gap: 18px 12px; }
+  .via-discovery-experience .via-public-pagination { gap: 10px; font-size: 11px; }
+  .via-discovery-experience .via-public-pagination button { padding-inline: 14px; }
+}
+@media (max-height: 650px) and (min-width: 601px) {
+  .via-discovery-hero { padding-block: 40px 32px; }
+  .via-discovery-experience .via-discovery-intro h1 { font-size: clamp(44px, 5vw, 72px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .via-discovery-experience *, .via-discovery-experience *::before { animation: none; transition: none; }
+}

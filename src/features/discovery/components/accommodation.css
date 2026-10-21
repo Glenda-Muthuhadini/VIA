@@ -1,0 +1,44 @@
+.via-discovery-experience .via-opportunity-card.via-accommodation-card { position: relative; padding: 0; min-width: 0; }
+.via-accommodation-card-media { position: relative; border-radius: 28px 28px 0 0; }
+.via-accommodation-image, .via-accommodation-image-placeholder { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center; border-radius: inherit; }
+.via-accommodation-card-media .via-accommodation-image { border-radius: 28px 28px 0 0; }
+.via-accommodation-image-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; border-radius: 28px 28px 0 0; background: linear-gradient(135deg,#244b40,#10372e); color: #b5ccbf; font-size: 13px; }
+.via-accommodation-card-media .via-accommodation-save { position: absolute; z-index: 1; top: 16px; right: 16px; width: 46px; height: 46px; background: #082f29e6; border-color: #ffffff40; color: #f4f8f5; }
+.via-accommodation-card-copy { display: flex; flex: 1; flex-direction: column; padding: clamp(22px,2.3vw,32px); }
+.via-accommodation-card-copy h2 { overflow-wrap: anywhere; }
+.via-accommodation-card-open::after { content: ''; position: absolute; inset: 0; border-radius: 28px; }
+.via-accommodation-card .via-accommodation-card-open:focus-visible { outline: none; }
+.via-accommodation-card-open:focus-visible::after { outline: 2px solid #d6e8ae; outline-offset: 4px; }
+.via-accommodation-location { margin-top: 12px; color: #b5ccbf; font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
+.via-accommodation-type { margin-top: 18px; color: #d6e8ae; font-size: 14px; line-height: 1.7; }
+.via-accommodation-price { margin-top: 22px; color: #e2edc9; font-size: 17px; line-height: 1.6; }
+.via-accommodation-card-cta { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 48px; margin-top: auto; padding-top: 24px; color: #d6e8ae; font-size: 14px; }
+.via-accommodation-demo { align-self: flex-start; margin-bottom: 14px; padding: 5px 9px; border: 1px solid #d6e8ae40; border-radius: 8px; color: #d6e8ae; font-size: 11px; }
+.via-public-dialog:has(.via-accommodation-details) { width: min(900px,calc(100% - 32px)); max-height: 90dvh; margin: auto; border-radius: 24px; }
+.via-accommodation-details > .via-accommodation-image { aspect-ratio: 16 / 8; border-radius: 0; }
+.via-accommodation-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.via-accommodation-header > div { min-width: 0; }
+.via-accommodation-header h2 { margin: 0; color: #f4f8f5; font-size: clamp(27px,3.2vw,40px); font-weight: 500; line-height: 1.2; letter-spacing: -.035em; overflow-wrap: anywhere; }
+.via-accommodation-header .via-accommodation-save { flex-shrink: 0; min-height: 46px; gap: 8px; }
+.via-accommodation-details .via-accommodation-demo-notice { margin-top: 22px; padding: 14px 16px; border: 1px solid #d6e8ae40; border-radius: 12px; color: #d6e8ae; font-size: 13px; line-height: 1.7; }
+.via-accommodation-section { margin-top: 30px; padding-top: 26px; border-top: 1px solid #ffffff20; }
+.via-accommodation-section h3 { margin: 0 0 16px; font-size: clamp(19px,2.2vw,23px); color: #e2edc9; font-weight: 500; line-height: 1.4; }
+.via-accommodation-section p, .via-accommodation-section li { font-size: 15px; color: #c5d7cc; line-height: 1.8; overflow-wrap: anywhere; }
+.via-accommodation-details .via-accommodation-features { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px 20px; padding: 0; margin: 0; list-style: none; }
+.via-accommodation-features li { display: flex; align-items: flex-start; gap: 12px; }
+.via-accommodation-features svg { flex-shrink: 0; margin-top: 5px; color: #d6e8ae; }
+.via-accommodation-details .via-accommodation-institutions { display: grid; gap: 18px; list-style: none; margin: 0; padding: 0; }
+.via-accommodation-institutions li { display: flex; flex-direction: column; gap: 4px; }
+.via-accommodation-institutions strong { font-weight: 500; color: #eef5e9; }
+.via-accommodation-institutions span { font-size: 13px; color: #b5ccbf; }
+.via-accommodation-details :is(.via-accommodation-features,.via-accommodation-institutions) li { margin: 0; }
+.via-accommodation-contact .via-public-button { min-height: 50px; max-width: 100%; margin-bottom: 12px; white-space: normal; text-align: center; }
+.via-accommodation-contact p + p { margin-top: 10px; }
+.via-accommodation-contact a:not(.via-public-button) { color: #d6e8ae; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.via-accommodation-details :is(button,a):focus-visible { outline: 2px solid #d6e8ae; outline-offset: 4px; }
+@media(max-width:600px) {
+ .via-accommodation-header { flex-direction: column; gap: 18px; }
+ .via-accommodation-details .via-accommodation-features { grid-template-columns: minmax(0,1fr); }
+ .via-accommodation-contact .via-public-button { width: 100%; }
+ .via-accommodation-details > .via-accommodation-image { aspect-ratio: 16 / 10; }
+}

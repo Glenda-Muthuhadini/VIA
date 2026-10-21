@@ -1,0 +1,592 @@
+[
+  {
+    "url": "https://allangrayorbis.org/programmes/fellowship/",
+    "status": 200,
+    "final_url": "https://allangrayorbis.org/programmes/fellowship/",
+    "title": "Fellowship Programme | Entrepreneurship Begins Here",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.212Z"
+  },
+  {
+    "url": "https://applications-prod.tut.ac.za/",
+    "status": 200,
+    "final_url": "https://applications-prod.tut.ac.za/",
+    "title": "ITS Infinity Applications Management",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:12.149Z"
+  },
+  {
+    "url": "https://applyonline.isfap.org.za/content/welcome-isfap-online-applications",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:12.930Z"
+  },
+  {
+    "url": "https://apps.mandela.ac.za/Accommodation/",
+    "status": 200,
+    "final_url": "https://apps.mandela.ac.za/Accommodation/",
+    "title": "Online Residence Application",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:16.169Z"
+  },
+  {
+    "url": "https://apps.mandela.ac.za/e-portal/OnlineApplications/startapplication",
+    "status": 200,
+    "final_url": "https://apps.mandela.ac.za/e-portal/OnlineApplications/startapplication",
+    "title": "Nelson Mandela University -",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:12.167Z"
+  },
+  {
+    "url": "https://bursaryconnect.transnet.net/",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:12.783Z"
+  },
+  {
+    "url": "https://falsebaycollege.co.za/",
+    "status": 200,
+    "final_url": "https://falsebaycollege.co.za/",
+    "title": "Welcome to False Bay TVET College | My Dream, My College",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:08.802Z"
+  },
+  {
+    "url": "https://falsebaycollege.co.za/ict/",
+    "status": 200,
+    "final_url": "https://falsebaycollege.co.za/ict/",
+    "title": "Information and Communication Technology | False Bay TVET College",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:10.525Z"
+  },
+  {
+    "url": "https://m.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Higher-Certificate-in-Marketing-%2898229%29",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:15.561Z"
+  },
+  {
+    "url": "https://my.staysouthpoint.co.za/",
+    "status": 200,
+    "final_url": "https://my.staysouthpoint.co.za/",
+    "title": "Welcome | Stay South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:11.333Z"
+  },
+  {
+    "url": "https://prospectus.cput.ac.za/index.php/course-details?f=220&q=DPICTA",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:14.882Z"
+  },
+  {
+    "url": "https://sit.uct.ac.za/ba-informatics",
+    "status": 200,
+    "final_url": "https://sit.uct.ac.za/ba-informatics",
+    "title": "BA Informatics | School of Information Technology",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:11.005Z"
+  },
+  {
+    "url": "https://sit.uct.ac.za/bachelor-business-science-specialising-computer-science",
+    "status": 200,
+    "final_url": "https://sit.uct.ac.za/bachelor-business-science-specialising-computer-science",
+    "title": "Bachelor of Business Science specialising in Computer Science | School of Information Technology",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:11.420Z"
+  },
+  {
+    "url": "https://sit.uct.ac.za/department-computer-science",
+    "status": 200,
+    "final_url": "https://sit.uct.ac.za/department-computer-science",
+    "title": "Department of Computer Science | School of Information Technology",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:10.652Z"
+  },
+  {
+    "url": "https://sit.uct.ac.za/how-apply",
+    "status": 200,
+    "final_url": "https://sit.uct.ac.za/how-apply",
+    "title": "How to apply | School of Information Technology",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:10.363Z"
+  },
+  {
+    "url": "https://tut.ac.za/images/docs/study/General-Information-First-Year-Enrolment.pdf",
+    "status": 404,
+    "final_url": "https://www.tut.ac.za/images/docs/study/General-Information-First-Year-Enrolment.pdf",
+    "title": "404 | Tshwane University of Technology",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:17.160Z"
+  },
+  {
+    "url": "https://uct.ac.za/",
+    "status": 200,
+    "final_url": "https://uct.ac.za/",
+    "title": "Home | University of Cape Town",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:08.814Z"
+  },
+  {
+    "url": "https://uct.ac.za/applicants-and-students",
+    "status": 200,
+    "final_url": "https://uct.ac.za/applicants-and-students",
+    "title": "Applicants and students | University of Cape Town",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:08.790Z"
+  },
+  {
+    "url": "https://uct.ac.za/dsa/student-housing",
+    "status": 200,
+    "final_url": "https://uct.ac.za/dsa/student-housing",
+    "title": "Student Housing | Department of Student Affairs",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:16.839Z"
+  },
+  {
+    "url": "https://unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/General-admission-requirements",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:14.836Z"
+  },
+  {
+    "url": "https://w2.unisa.ac.za/CW/SITES/CORPORAT/DEFAULT/APPLY_FO/UNDERGRA/QUALIFIC/ALL_QUAL/HIGHER-5.HTM",
+    "status": 200,
+    "final_url": "https://w2.unisa.ac.za/CW/SITES/CORPORAT/DEFAULT/APPLY_FO/UNDERGRA/QUALIFIC/ALL_QUAL/HIGHER-5.HTM",
+    "title": "Higher Certificate in Banking (98225)",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:15.217Z"
+  },
+  {
+    "url": "https://www.cput.ac.za/",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:11.465Z"
+  },
+  {
+    "url": "https://www.cput.ac.za/student/support-services/dsa/residence/residence-life",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:15.815Z"
+  },
+  {
+    "url": "https://www.cput.ac.za/study-at-cput/undergraduate/apply",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:11.559Z"
+  },
+  {
+    "url": "https://www.cput.ac.za/study-at-cput/undergraduate/apply-for-residence",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:15.974Z"
+  },
+  {
+    "url": "https://www.cput.ac.za/study-at-cput/undergraduate/apply/step-3",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:11.544Z"
+  },
+  {
+    "url": "https://www.csir.co.za/careers/students-graduates/bursaries",
+    "status": 200,
+    "final_url": "https://www.csir.co.za/careers/students-graduates/bursaries",
+    "title": "Bursaries | CSIR",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:15.136Z"
+  },
+  {
+    "url": "https://www.dut.ac.za/",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:11.593Z"
+  },
+  {
+    "url": "https://www.dut.ac.za/student_services/student-housing-and-residence-life/",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:15.997Z"
+  },
+  {
+    "url": "https://www.dut.ac.za/wp-content/uploads/career_leaflets/FAI%20ICT%20DBN.pdf",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:14.940Z"
+  },
+  {
+    "url": "https://www.funzalushaka.doe.gov.za/Home/",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:10.678Z"
+  },
+  {
+    "url": "https://www.idc.co.za/bursaries/",
+    "status": 200,
+    "final_url": "https://www.idc.co.za/bursaries/",
+    "title": "IDC Bursaries 2027 | Eligibility &amp; Requirements",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:13.828Z"
+  },
+  {
+    "url": "https://www.isfap.org.za/students",
+    "status": 200,
+    "final_url": "https://www.isfap.org.za/students",
+    "title": "ISFAP — Student Financial Aid Programme",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:13.231Z"
+  },
+  {
+    "url": "https://www.mandela.ac.za/",
+    "status": 200,
+    "final_url": "https://www.mandela.ac.za/",
+    "title": "Home - Nelson Mandela University",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:13.879Z"
+  },
+  {
+    "url": "https://www.mandela.ac.za/getmedia/8d278dd0-b607-4ac3-a7d1-8450ba54a8e2/Prospectus-Faculty-of-EBET?disposition=attachment",
+    "status": 200,
+    "final_url": "https://www.mandela.ac.za/getmedia/8d278dd0-b607-4ac3-a7d1-8450ba54a8e2/Prospectus-Faculty-of-EBET?disposition=attachment",
+    "title": "",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:16.468Z"
+  },
+  {
+    "url": "https://www.nra.co.za/bursaries",
+    "status": 200,
+    "final_url": "https://www.nra.co.za/bursaries",
+    "title": "Sanral: Building South Africa through better roads:\n        SanralPages",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:12.837Z"
+  },
+  {
+    "url": "https://www.nsfas.org.za/content/",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:10.954Z"
+  },
+  {
+    "url": "https://www.nsfas.org.za/content/faqs.html",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:10.817Z"
+  },
+  {
+    "url": "https://www.nsfas.org.za/content/how-to-apply.html",
+    "ok": false,
+    "error": "fetch failed",
+    "checked_at": "2026-10-17T22:14:10.815Z"
+  },
+  {
+    "url": "https://www.saica.org.za/initiatives/thuthuka/apply-to-the-thuthuka-bursary-fund",
+    "status": 200,
+    "final_url": "https://www.saica.org.za/initiatives/thuthuka/apply-to-the-thuthuka-bursary-fund",
+    "title": "SAICA | Apply to the Thuthuka Bursary",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.469Z"
+  },
+  {
+    "url": "https://www.sasolbursaries.com/welcome/how-to-apply/",
+    "status": 200,
+    "final_url": "https://www.sasolbursaries.com/welcome/how-to-apply/",
+    "title": "How to Apply &#8211; Sasol Bursaries",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:12.638Z"
+  },
+  {
+    "url": "https://www.sasolbursaries.com/welcome/under-graduate/",
+    "status": 200,
+    "final_url": "https://www.sasolbursaries.com/welcome/under-graduate/",
+    "title": "Sasol Mainstream Undergraduate &#8211; Sasol Bursaries",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:12.550Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/46-de-korte",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/46-de-korte",
+    "title": "Student Accommodation at 46 De Korte | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.016Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/56-jorissen",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/56-jorissen",
+    "title": "Student Accommodation at 56 Jorissen | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.133Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/66-de-korte",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/66-de-korte",
+    "title": "Student Accommodation at 66 De Korte | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.202Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/90-de-korte",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/90-de-korte",
+    "title": "Student Accommodation at 90 De Korte | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.304Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/argon-house",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/argon-house",
+    "title": "Student Accommodation at Argon House | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.296Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/b-hive",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/b-hive",
+    "title": "Student Accommodation at B-Hive | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.375Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/blackburn-house",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/blackburn-house",
+    "title": "Student Accommodation at Blackburn House | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.378Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/clifton-heights",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/clifton-heights",
+    "title": "Student Accommodation at Clifton Heights | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:14.466Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/ksi",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/ksi",
+    "title": "Student Accommodation at KSI | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:11.126Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/joburg/melridge-house",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/joburg/melridge-house",
+    "title": "Student Accommodation at Melridge House | Near Wits &amp; UJ | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:11.255Z"
+  },
+  {
+    "url": "https://www.staysouthpoint.co.za/soweto",
+    "status": 200,
+    "final_url": "https://www.staysouthpoint.co.za/soweto",
+    "title": "South Point Soweto — Student Accommodation Near UJ Soweto Campus | South Point",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:16.472Z"
+  },
+  {
+    "url": "https://www.thuthukabursaryfund.co.za/",
+    "status": 200,
+    "final_url": "https://www.thuthukabursaryfund.co.za/",
+    "title": "Saica | Thuthuka",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:13.529Z"
+  },
+  {
+    "url": "https://www.transnet.net/YouthDevelopmentProgrammes",
+    "status": 200,
+    "final_url": "https://www.transnet.net/YouthDevelopmentProgrammes",
+    "title": "Transnet",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:12.781Z"
+  },
+  {
+    "url": "https://www.tut.ac.za/",
+    "status": 200,
+    "final_url": "https://www.tut.ac.za/",
+    "title": "Home | Tshwane University of Technology",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:12.261Z"
+  },
+  {
+    "url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/2027-First-Year-Course-Information.pdf",
+    "status": 404,
+    "final_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/2027-First-Year-Course-Information.pdf",
+    "title": "404 | Tshwane University of Technology",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:15.555Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:11.328Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/admission-aid/new/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/admission-aid/new/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:11.398Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/admission-aid/undergraduate/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/admission-aid/undergraduate/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:11.480Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/university-courses/bachelor-of-accounting-ca-stream/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/university-courses/bachelor-of-accounting-ca-stream/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:14.618Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/university-courses/bed-in-foundation-phase-teaching-grade-r-3/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/university-courses/bed-in-foundation-phase-teaching-grade-r-3/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:14.690Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/university-courses/bsc-in-mathematical-sciences-mathematics-and-computer-science/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/university-courses/bsc-in-mathematical-sciences-mathematics-and-computer-science/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:12.309Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/university-courses/bsc-in-mathematical-sciences-mathematics-and-informatics/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/university-courses/bsc-in-mathematical-sciences-mathematics-and-informatics/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:12.323Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/university-courses/bsc-in-mathematical-sciences-mathematics-and-mathematical-statistics-with-financial-orientation/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/university-courses/bsc-in-mathematical-sciences-mathematics-and-mathematical-statistics-with-financial-orientation/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:12.486Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/university-courses/bsc-in-mathematical-sciences-mathematics-and-mathematical-statistics/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/university-courses/bsc-in-mathematical-sciences-mathematics-and-mathematical-statistics/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:12.409Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/university-courses/diploma-in-accountancy/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/university-courses/diploma-in-accountancy/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:14.629Z"
+  },
+  {
+    "url": "https://www.uj.ac.za/university-courses/diploma-in-public-relations-and-communication-extended/",
+    "status": 403,
+    "final_url": "https://www.uj.ac.za/university-courses/diploma-in-public-relations-and-communication-extended/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:14.540Z"
+  },
+  {
+    "url": "https://www.unisa.ac.za/",
+    "status": 200,
+    "final_url": "https://www.unisa.ac.za/sites/corporate/default",
+    "title": "Home",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:11.886Z"
+  },
+  {
+    "url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications",
+    "status": 200,
+    "final_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications",
+    "title": "Undergraduate qualifications",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:11.966Z"
+  },
+  {
+    "url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Apply-for-admission",
+    "status": 200,
+    "final_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Apply-for-admission",
+    "title": "Apply for admission",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:11.783Z"
+  },
+  {
+    "url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Higher-Certificate-in-Banking-%2898225%29",
+    "status": 200,
+    "final_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Higher-Certificate-in-Banking-%2898225%29",
+    "title": "Higher Certificate in Banking (98225)",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:15.653Z"
+  },
+  {
+    "url": "https://www.up.ac.za/",
+    "status": 403,
+    "final_url": "https://www.up.ac.za/",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:09.004Z"
+  },
+  {
+    "url": "https://www.up.ac.za/science-mathematics-technology-education/pdf/generator/study_programmes/67441",
+    "status": 403,
+    "final_url": "https://www.up.ac.za/science-mathematics-technology-education/pdf/generator/study_programmes/67441",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:09.006Z"
+  },
+  {
+    "url": "https://www.up.ac.za/student-accommodation",
+    "status": 403,
+    "final_url": "https://www.up.ac.za/student-accommodation",
+    "title": "Just a moment...",
+    "ok": false,
+    "checked_at": "2026-10-17T22:14:15.872Z"
+  },
+  {
+    "url": "https://www.wits.ac.za/",
+    "status": 200,
+    "final_url": "https://www.wits.ac.za/",
+    "title": "Home - Wits University",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:09.186Z"
+  },
+  {
+    "url": "https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/",
+    "status": 200,
+    "final_url": "https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/",
+    "title": "Computer Science - Wits University",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:10.418Z"
+  },
+  {
+    "url": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+    "status": 200,
+    "final_url": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+    "title": "Apply to Wits - Wits University",
+    "ok": true,
+    "checked_at": "2026-10-17T22:14:09.128Z"
+  }
+]

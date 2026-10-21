@@ -1,0 +1,21 @@
+.via-journey-question { display: grid; gap: 24px; min-width: 0; width: 100%; color: #eaf2ec; }
+.via-journey-options { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.via-journey-options label,.via-journey-uncertain { display: flex; align-items: center; gap: 14px; padding: 16px 18px; min-height: 58px; border: 1px solid #d4e8d936; border-radius: 16px; background: #ffffff08; cursor: pointer; line-height: 1.5; }
+.via-journey-options label:has(input:checked),.via-journey-uncertain:has(input:checked) { background: #d6e8ae20; border-color: #d6e8ae; }
+.via-journey-question input:is([type=checkbox],[type=radio]) { accent-color: #d6e8ae; width: 20px; height: 20px; flex-shrink: 0; }
+.via-journey-options span { min-width: 0; overflow-wrap: anywhere; }
+.via-journey-options small { display: block; margin-top: 6px; color: #bcd1c4; }
+.via-journey-field { display: grid; gap: 10px; min-width: 0; color: #eaf2ec; line-height: 1.5; }
+.via-journey-field :is(input,select) { width: 100%; min-width: 0; max-width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid #d4e8d950; background: #163f34; color: #eef5e9; border-radius: 12px; font: inherit; font-size: 16px; }
+.via-journey-field select option { background: #163f34; color: #eef5e9; }
+.via-journey-question :is(input,button,select,summary):focus-visible { outline: 2px solid #d6e8ae; outline-offset: 4px; }
+.via-journey-catalogue { max-height: 360px; overflow-y: auto; overscroll-behavior: contain; padding: 5px; }
+.via-journey-more { border: 1px solid #d4e8d936; border-radius: 16px; padding: 16px; min-width: 0; }
+.via-journey-more summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; }
+.via-journey-more[open] summary { margin-bottom: 16px; }
+.via-journey-applications { display: grid; gap: 20px; }
+.via-journey-applications h2 { font-size: 22px; }
+.via-journey-applications fieldset { display: grid; gap: 18px; min-width: 0; padding: clamp(16px,3vw,26px); border: 1px solid #d4e8d936; border-radius: 16px; }
+.via-journey-applications legend { padding: 0 8px; }
+.via-journey-inline-button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 46px; padding: 12px 18px; border: 1px solid #d4e8d950; border-radius: 12px; background: #ffffff0c; color: inherit; font: inherit; cursor: pointer; }
+@media(max-width:760px) { .via-journey-options { grid-template-columns: minmax(0,1fr); } .via-journey-question { gap: 20px; } }

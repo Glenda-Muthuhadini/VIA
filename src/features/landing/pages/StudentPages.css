@@ -1,0 +1,38 @@
+.via-student-page { width: min(100%, 1440px); margin-inline: auto; padding: clamp(44px, 6vw, 88px) clamp(24px, 5.6vw, 80px); color: #f4f8f5; }
+.via-student-intro { max-width: 860px; margin-bottom: 36px; }
+.via-student-intro h1 { margin: 16px 0 24px; color: #f4f8f5; font-size: clamp(36px, 4.5vw, 66px); font-weight: 500; letter-spacing: -.045em; line-height: 1.08; text-wrap: balance; }
+.via-student-page p, .via-student-page li { color: #c3d3cc; font-size: 16px; line-height: 1.75; }
+.via-student-card-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }
+.via-student-card-grid.is-three { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.via-student-card { min-width: 0; padding: clamp(24px,3vw,38px); border: 1px solid #ffffff29; border-radius: 24px; background: #ffffff09; }
+.via-student-card :is(h2,h3) { margin: 0 0 16px; color: #e2edc9; font-size: clamp(21px,2vw,26px); line-height: 1.3; font-weight: 500; }
+.via-student-card p + p { margin-top: 16px; }
+.via-student-page a { color: #e2edc9; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.via-student-card > a, .via-student-guide-card > span { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin-top: 18px; }
+.via-student-card a svg, .via-student-actions svg { flex-shrink: 0; }
+.via-student-guide-card { display: flex; flex-direction: column; align-items: flex-start; text-decoration: none; transition: background .2s; }
+.via-student-guide-card:hover { background: #ffffff12; }
+.via-student-guide-card h2 { margin-top: 24px; }
+.via-student-guide-card > span { margin-top: auto; padding-top: 22px; }
+.via-student-card :is(ol,ul) { padding-left: 24px; }
+.via-student-card ol { list-style: decimal; }
+.via-student-card ul { list-style: disc; }
+.via-student-card li + li { margin-top: 16px; }
+.via-student-article { max-width: 860px; }
+.via-student-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-block: 28px 44px; }
+.via-student-page .via-public-button { white-space: normal; text-align: center; text-decoration: none; max-width: 100%; }
+.via-student-page .via-public-button.is-primary { color: #123e30; }
+.via-student-back { display: inline-flex; align-items: center; min-height: 44px; margin-bottom: 20px; }
+.via-student-source { margin-block: 28px 52px; font-size: 13px !important; }
+.via-contact-layout { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); align-items: start; gap: 28px; }
+.via-contact-layout aside > svg { color: #d6e8ae; margin-bottom: 24px; }
+.via-contact-form { display: grid; gap: 22px; }
+.via-contact-form label { display: grid; gap: 9px; font-size: 15px; min-width: 0; }
+.via-contact-form :is(input,textarea) { box-sizing: border-box; width: 100%; min-width: 0; min-height: 48px; padding: 12px 14px; background: #05261f; color: #f4f8f5; border: 1px solid #ffffff44; border-radius: 10px; font: inherit; font-size: 16px; }
+.via-contact-form textarea { resize: vertical; }
+.via-contact-form button { justify-self: start; }
+.via-contact-notice:empty { display: none; }
+.via-student-page :is(a,button,input,textarea):focus-visible { outline: 2px solid #d6e8ae; outline-offset: 4px; }
+@media(max-width:1000px) { .via-student-card-grid.is-three { grid-template-columns: 1fr; } }
+@media(max-width:700px) { .via-student-card-grid,.via-contact-layout { grid-template-columns: minmax(0,1fr); } .via-student-actions { flex-direction: column; align-items: stretch; } .via-contact-form button { width: 100%; } }
+@media(prefers-reduced-motion:reduce) { .via-student-guide-card { transition: none; } }
